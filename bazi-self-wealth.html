@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ผังพื้นดวงปาจื้อ · SELF is the new WEALTH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&text=%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81%E6%88%8A%E5%B7%B1%E5%BA%9A%E8%BE%9B%E5%A3%AC%E7%99%B8%E5%AD%90%E4%B8%91%E5%AF%85%E5%8D%AF%E8%BE%B0%E5%B7%B3%E5%8D%88%E6%9C%AA%E7%94%B3%E9%85%89%E6%88%8C%E4%BA%A5%E6%9C%A8%E7%81%AB%E5%9C%9F%E9%87%91%E6%B0%B4%E6%AF%94%E8%82%A9%E5%8A%AB%E8%B4%A2%E6%AD%A3%E5%8D%B0%E5%81%8F%E9%A3%9F%E7%A5%9E%E4%BC%A4%E5%AE%98%E4%B8%83%E6%9D%80%E8%B4%B5%E4%BA%BA%E5%86%B2%E5%90%88%E4%B9%9D%E9%95%BF%E7%94%9F%E6%B2%90%E6%B5%B4%E5%86%A0%E5%B8%A6%E4%B8%B4%E5%AE%98%E5%B8%9D%E6%97%BA%E8%A1%B0%E7%97%85%E6%AD%BB%E5%A2%93%E7%BB%9D%E8%83%8E%E5%85%BB%E5%88%91%E5%AE%B3%E7%A0%B4%E6%96%87%E6%98%8C%E6%A1%83%E8%8A%B1%E9%A9%BF%E9%A9%AC%E5%8D%8E%E7%9B%96%E5%B0%86%E6%98%9F%E7%BE%8A%E5%88%83%E7%A9%BA%E4%BA%A1%E4%B8%89%E4%BC%9A%E5%A4%A7%E8%BF%90%E6%B5%81%E5%B9%B4%E5%80%BC%E8%BA%AB%E5%AD%A6%E7%BA%B3%E9%9F%B3%E9%AA%8C%E5%BB%BA%E7%A6%84%E6%A0%BC%E6%9C%88&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0F2; --card:#FFFFFF; --ink:#18202E; --muted:#5A6374; --line:#D6DAE0; --soft:#E3E7EC;
+  --seal:#B0271F; --seal-ink:#FFFFFF;
+  --wood:#2F7A4B; --fire:#C4362C; --earth:#8C5E2A; --metal:#646D7B; --water:#1F4F91;
+  --serif:"Noto Serif Thai","Noto Serif TC",Georgia,serif;
+  --sans:"IBM Plex Sans Thai",-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --hz:"Noto Serif TC","Songti SC","PMingLiU",serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#10141B;--card:#19202A;--ink:#E8EBF0;--muted:#9AA3B2;--line:#2C3542;--soft:#222A35;--seal:#D8473D;--metal:#7A8494}}
+:root[data-theme="dark"]{--paper:#10141B;--card:#19202A;--ink:#E8EBF0;--muted:#9AA3B2;--line:#2C3542;--soft:#222A35;--seal:#D8473D;--metal:#7A8494}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:660px;margin:0 auto;padding:0 18px 64px}
+h1,h2,h3{font-family:var(--serif);line-height:1.3;margin:0}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--seal);outline-offset:2px}
+
+/* form */
+.intro{padding:40px 0 20px}
+.intro .course{font-size:14px;color:var(--muted);margin:0 0 14px}
+.intro h1{font-size:clamp(30px,8vw,44px);font-weight:700;letter-spacing:-.01em}
+.intro p{color:var(--muted);margin:12px 0 0;max-width:34em}
+.hanzi-row{display:flex;gap:6px;margin:22px 0 0}
+.hanzi-row span{font-family:var(--hz);font-weight:700;font-size:22px;width:40px;height:40px;display:grid;place-items:center;border-radius:6px;color:#fff}
+form.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:12px}
+.field{margin-bottom:16px}
+.field label.l{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.field .hint{font-size:13px;color:var(--muted);margin-top:4px}
+input[type=text],input[type=date],input[type=time],select{width:100%;min-height:48px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);appearance:none;-webkit-appearance:none}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 20px) 21px,calc(100% - 15px) 21px;background-size:5px 5px;background-repeat:no-repeat;padding-right:36px}
+input:focus,select:focus{border-color:var(--ink);outline:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.check{display:flex;align-items:center;gap:8px;font-size:14px;margin-top:8px;color:var(--muted)}
+.check input{width:20px;height:20px;accent-color:var(--seal)}
+.go{width:100%;min-height:52px;border:0;border-radius:12px;background:var(--seal);color:var(--seal-ink);font-weight:600;font-size:17px;cursor:pointer;margin-top:4px}
+.go:active{transform:translateY(1px)}
+details.adv{margin:4px 0 16px;font-size:14px;color:var(--muted)}
+details.adv summary{cursor:pointer;padding:6px 0}
+.err{color:var(--seal);font-size:14px;margin:0 0 10px;display:none}
+
+/* result */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line);margin:0 -18px;padding:8px 18px}
+.topbar .inner{display:flex;align-items:center;gap:10px}
+.back{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-size:14px;cursor:pointer;flex:0 0 auto}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:0 0 auto;font-size:14px;text-decoration:none;color:var(--ink);padding:6px 12px;border-radius:999px;background:var(--soft)}
+.who{padding:26px 0 8px}
+.who h1{font-size:clamp(26px,7vw,36px)}
+.who .meta{color:var(--muted);font-size:14px;margin-top:6px}
+.warn{background:var(--soft);border-left:3px solid var(--seal);padding:10px 12px;border-radius:6px;font-size:14px;margin:12px 0}
+
+.chart{margin:18px 0 6px}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.colhead{text-align:center;font-size:13px;line-height:1.35}
+.colhead b{display:block;font-weight:600}
+.colhead span{color:var(--muted);font-size:12px}
+.rowlab{font-size:12px;color:var(--muted);margin:10px 0 4px}
+.tile{position:relative;overflow:hidden;border-radius:10px;color:#fff;text-align:center;padding:10px 4px 12px;min-height:118px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tile .zh{font-family:var(--hz);font-weight:700;font-size:clamp(30px,9vw,40px);line-height:1.05}
+.tile .nm{font-size:13px;font-weight:600;margin-top:4px}
+.tile .el{font-size:12px;opacity:.92}
+.tile .tg{position:absolute;top:5px;right:6px;font-size:10px;font-weight:600;opacity:.9}
+.tile.dm{box-shadow:0 0 0 3px var(--paper),0 0 0 5px var(--ink)}
+.tile.none{background:transparent!important;border:1.5px dashed var(--line);color:var(--muted)}
+.badge{margin-top:6px;font-size:12px;font-weight:600;border-radius:999px;padding:1px 8px;background:rgba(255,255,255,.95);color:#18202E}
+.badge.zero{background:rgba(0,0,0,.28);color:#fff}
+.tile .hstrip{position:absolute;left:0;right:0;bottom:0;height:7px;border-radius:0 0 10px 10px}
+
+section{margin-top:34px}
+section>h2{font-size:23px;margin-bottom:4px}
+section>.lede{color:var(--muted);margin:0 0 14px;font-size:15px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.box+.box{margin-top:10px}
+
+.selfhead{display:flex;gap:14px;align-items:center}
+.bigzh{font-family:var(--hz);font-weight:700;font-size:56px;width:84px;height:84px;border-radius:14px;display:grid;place-items:center;color:#fff;flex:0 0 auto}
+.selfhead h3{font-size:22px}
+.selfhead p{margin:2px 0 0;color:var(--muted);font-size:14px}
+ul.traits{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+ul.traits li{padding:5px 12px;border-radius:999px;border:1px solid var(--line);font-size:14px}
+.famous{margin-top:14px;font-size:14px;color:var(--muted)}
+.famous b{color:var(--ink);font-weight:600}
+
+table.rel{width:100%;border-collapse:collapse;font-size:14px}
+table.rel th,table.rel td{padding:10px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.rel th{font-weight:600;font-size:13px;color:var(--muted)}
+table.rel tr:last-child td{border-bottom:0}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.cnt{font-weight:600;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+
+.strength{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+.seal{width:112px;height:112px;border-radius:16px;background:var(--seal);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-4deg);box-shadow:inset 0 0 0 4px rgba(255,255,255,.25)}
+.seal .n{font-family:var(--serif);font-size:40px;font-weight:700;line-height:1}
+.seal .d{font-size:13px;opacity:.9}
+.strength h3{font-size:24px}
+.strength .sub{color:var(--muted);font-size:14px}
+.scale{margin:20px 0 6px;position:relative}
+.scale .bar{display:grid;grid-template-columns:2fr 3fr 1fr 3fr 2fr;gap:3px;height:34px}
+.scale .bar div{border-radius:4px;background:var(--soft);font-size:11px;display:grid;place-items:center;color:var(--muted);text-align:center;line-height:1.15;padding:0 2px}
+.scale .bar div.on{background:var(--ink);color:var(--paper);font-weight:600}
+.scale .ticks{position:relative;height:16px;font-size:11px;color:var(--muted);margin-top:4px;font-variant-numeric:tabular-nums}
+.scale .ticks span{position:absolute;transform:translateX(-50%)}
+.scale .ticks span:first-child{transform:none}.scale .ticks span:last-child{transform:translateX(-100%)}
+.pin{position:absolute;top:-10px;width:2px;height:54px;background:var(--seal)}
+.pin::after{content:"";position:absolute;top:-4px;left:-4px;width:10px;height:10px;border-radius:50%;background:var(--seal)}
+ol.steps{margin:0;padding:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 14px 40px;font-size:15px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-size:13px;font-weight:600}
+ol.steps li b{display:block;font-weight:600}
+ol.steps li:last-child{padding-bottom:0}
+
+.fav{border-radius:14px;padding:18px;color:#fff;margin-top:10px}
+.fav .rank{font-size:13px;opacity:.9}
+.fav h3{font-size:22px;margin:2px 0 10px;display:flex;align-items:center;gap:10px}
+.fav h3 .zh{font-family:var(--hz);font-size:30px}
+.fav dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px}
+.fav dt{opacity:.85}
+.fav dd{margin:0;font-weight:500}
+.fav .sw{display:flex;gap:6px;margin:10px 0 2px}
+.fav .sw i{width:26px;height:26px;border-radius:50%;border:2px solid rgba(255,255,255,.8)}
+.fav.minor{opacity:.92}
+.fav.minor h3{font-size:19px}
+
+.starbar{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.starbar:last-child{border-bottom:0}
+.starbar .zh{font-family:var(--hz);font-weight:700;font-size:22px;width:52px;flex:0 0 auto}
+.starbar .t{flex:1;min-width:0}
+.starbar .t b{font-weight:600;display:block}
+.starbar .t em{font-style:normal;color:var(--muted);font-size:13px}
+.pill{display:inline-block;background:var(--seal);color:#fff;font-size:12px;border-radius:999px;padding:0 8px;margin-left:6px;font-weight:600}
+.starbar .t small{display:block;color:var(--muted);font-size:13px;line-height:1.5}
+.starbar .w{font-variant-numeric:tabular-nums;font-weight:600;flex:0 0 auto}
+.meter{height:6px;border-radius:3px;background:var(--soft);margin-top:6px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--ink)}
+
+.pair{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.pair:last-child{border-bottom:0}
+.pair .ic{flex:0 0 auto;font-family:var(--hz);font-weight:700;font-size:20px;min-width:52px;height:44px;border-radius:10px;display:grid;place-items:center;background:var(--soft);padding:0 6px}
+.pair b{font-weight:600}
+.pair p{margin:2px 0 0;font-size:14px;color:var(--muted)}
+
+.ws li{margin-bottom:8px;font-size:15px}
+.ws .blank{border-bottom:1.5px dotted var(--muted);padding:0 40px 0 0}
+.note{font-size:13px;color:var(--muted);margin-top:28px;line-height:1.6}
+
+.small{font-size:13px;color:var(--muted)}
+.field .l{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;inset:0}
+.seg span{display:grid;place-items:center;min-height:46px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);cursor:pointer}
+.seg input:checked+span{border-color:var(--ink);background:var(--ink);color:var(--paper);font-weight:600}
+.seg input:focus-visible+span{outline:3px solid var(--seal);outline-offset:2px}
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;flex:1}
+.whorow{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{border:0;background:var(--soft);border-radius:10px;padding:8px 2px;font-size:13px;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--paper);font-weight:600}
+.pz{display:inline-flex;flex-direction:column;flex:0 0 auto;border-radius:7px;overflow:hidden;font-family:var(--hz);font-weight:700;line-height:1;vertical-align:middle}
+.pz i{font-style:normal;color:#fff;width:30px;height:26px;display:grid;place-items:center;font-size:17px}
+.pz i:first-child{background:var(--c1)}.pz i:last-child{background:var(--c2)}
+.lb{flex:0 0 auto;font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;white-space:nowrap}
+.g2{--lc:#1B7A43}.g1{--lc:#4E9B63}.n0{--lc:#8A93A2}.b1{--lc:#C98321}.b2{--lc:#B83227}
+.lb{background:var(--lc);color:#fff}
+table.adv{width:100%;border-collapse:collapse;font-size:13px}
+table.adv td,table.adv th{padding:8px 5px;border-bottom:1px solid var(--line);text-align:center;vertical-align:top}
+table.adv td:first-child{text-align:left;color:var(--muted);white-space:nowrap}
+table.adv tr:last-child td{border-bottom:0}
+.hs{font-weight:600}.hs span{font-family:var(--hz);font-size:16px}.hs.sub{font-weight:400;opacity:.8;font-size:12px}
+details.asp,details.yr{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-top:10px}
+details.asp summary,details.yr summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px 16px;font-weight:600}
+details.asp summary::-webkit-details-marker,details.yr summary::-webkit-details-marker{display:none}
+details.asp summary::after,details.yr summary::after{content:"";margin-left:auto;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);flex:0 0 auto}
+details[open]>summary::after{transform:rotate(-135deg)}
+details.asp summary .ic{font-family:var(--hz);width:36px;height:36px;border-radius:9px;background:var(--soft);display:grid;place-items:center;font-size:18px}
+.aspb,.yb{padding:0 16px 16px;font-size:15px}
+.aspb p,.yb p{margin:0 0 10px}
+.yb h4{font-family:var(--serif);font-size:17px;margin:14px 0 6px}
+.yt{display:flex;flex-direction:column;line-height:1.35;min-width:0}
+.yt small{font-weight:400;color:var(--muted);font-size:13px}
+details.yr summary .lb{margin-left:auto}
+details.yr summary::after{margin-left:8px}
+.nts p{font-size:14px;margin:0 0 6px}
+ul.rem{margin:6px 0 0;padding-left:20px;font-size:15px}
+ul.rem li{margin-bottom:6px}
+ul.rem li.pos::marker{color:#1B7A43}ul.rem li.neg::marker{color:#B83227}
+.months{display:grid;gap:4px}
+.mrow{display:flex;align-items:center;gap:10px;padding:4px 0;border-bottom:1px solid var(--line)}
+.mrow:last-child{border-bottom:0}
+.mrow .md{width:64px;font-size:13px;font-variant-numeric:tabular-nums}
+.mrow .mg{flex:1;font-size:13px;color:var(--muted)}
+.mrow .pz i{width:24px;height:20px;font-size:14px}
+.ystrip{display:grid;grid-template-columns:repeat(12,1fr);gap:3px;margin:0 0 6px}
+.ym{height:34px;border-radius:5px;background:var(--lc);display:grid;place-items:center}
+.ym span{font-size:9px;color:#fff;writing-mode:vertical-rl;transform:rotate(180deg)}
+.lrow{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.lrow:last-child{border-bottom:0}
+.lrow .t{flex:1;min-width:0;font-size:14px}
+.lrow .t small{display:block;color:var(--muted);font-size:13px;line-height:1.5}
+.lrow.cur{background:var(--soft);margin:0 -10px;padding:10px;border-radius:10px;border-bottom:0}
+.dbar{display:flex;height:26px;border-radius:6px;overflow:hidden;gap:2px}
+.dbar div{display:grid;place-items:center;color:#fff;font-size:12px;font-weight:600;min-width:4px}
+dl.kit{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:0;font-size:15px}
+dl.kit dt{color:var(--muted)} dl.kit dd{margin:0}
+.drow{display:flex;align-items:center;gap:12px;width:100%;border:0;background:none;padding:8px 0;border-bottom:1px solid var(--line);cursor:pointer;text-align:left}
+.drow .dd{flex:1;font-size:15px}
+.drow .pz i{width:24px;height:20px;font-size:14px}
+.calhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.calhead button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--paper);font-size:20px;cursor:pointer}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal>span{font-size:12px;color:var(--muted);padding:2px 0}
+.cd{position:relative;aspect-ratio:1;border:0;border-radius:9px;background:var(--soft);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:0}
+.cd span{font-size:14px;font-variant-numeric:tabular-nums}
+.cd i{width:8px;height:8px;border-radius:50%;background:var(--lc)}
+.cd.g2{background:color-mix(in srgb,#1B7A43 18%,var(--soft))}
+.cd.b2{background:color-mix(in srgb,#B83227 14%,var(--soft))}
+.cd.today span{font-weight:700;text-decoration:underline}
+.cd.sel{box-shadow:0 0 0 2px var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--lc);margin-right:4px}
+.daybox h3{font-size:19px}
+.daybox .pz i{width:34px;height:30px;font-size:20px}
+.prow{display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--line)}
+.pbtn{flex:1;display:flex;align-items:center;gap:12px;border:0;background:none;padding:10px 0;text-align:left;cursor:pointer;min-width:0}
+.pbtn .t{flex:1;min-width:0}.pbtn .t small{display:block;color:var(--muted);font-size:13px}
+.pbtn .sc{font-family:var(--serif);font-size:22px;font-weight:700}
+.bigzh.s{width:40px;height:40px;font-size:22px;border-radius:9px}
+.del{border:0;background:none;color:var(--muted);font-size:13px;padding:8px;cursor:pointer}
+.pd{padding:12px 0 6px;font-size:15px;border-bottom:1px solid var(--line)}
+.pd p{margin:0 0 12px}
+.pscore{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+.pscore .n{width:64px;height:64px;border-radius:14px;background:var(--seal);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:28px;font-weight:700;transform:rotate(-4deg)}
+.empty{color:var(--muted);font-size:15px}
+#pf .field{margin-bottom:12px}
+input[type=number]{width:100%;min-height:48px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper)}
+.rate{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--line)}
+.rate .yy{flex:1;font-size:14px}
+.rate .yy small{display:block;color:var(--muted);font-size:12px}
+.rate .rb{display:flex;gap:4px}
+.rate .rb button{border:1.5px solid var(--line);background:var(--paper);border-radius:8px;min-width:48px;padding:6px 4px;font-size:13px;cursor:pointer}
+.rate .rb button.on[data-v="1"]{background:#1B7A43;border-color:#1B7A43;color:#fff}
+.rate .rb button.on[data-v="0"]{background:#8A93A2;border-color:#8A93A2;color:#fff}
+.rate .rb button.on[data-v="-1"]{background:#B83227;border-color:#B83227;color:#fff}
+.acc{display:flex;gap:10px;margin:10px 0}
+.acc div{flex:1;background:var(--soft);border-radius:10px;padding:10px;text-align:center}
+.acc b{display:block;font-family:var(--serif);font-size:24px}
+.acc small{color:var(--muted);font-size:12px}
+.vbar{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:14px}
+.vbar .nm{width:34px}
+.vbar .tr{flex:1;height:10px;background:var(--soft);border-radius:5px;position:relative}
+.vbar .tr i{position:absolute;top:0;bottom:0;border-radius:5px}
+.vbar .tr::after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--muted)}
+.vbar .v{width:44px;text-align:right;font-variant-numeric:tabular-nums;font-size:13px}
+.btn2{border:1.5px solid var(--ink);background:none;border-radius:10px;padding:10px 14px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}
+.hidden{display:none!important}
+@media (max-width:380px){.tile{min-height:104px}.tile .nm{font-size:12px}.seal{width:96px;height:96px}.seal .n{font-size:34px}}
+@media (prefers-reduced-motion:no-preference){.reveal .tile{animation:drop .5s both}.reveal .tile:nth-child(2){animation-delay:.05s}.reveal .tile:nth-child(3){animation-delay:.1s}.reveal .tile:nth-child(4){animation-delay:.15s}@keyframes drop{from{opacity:0;transform:translateY(-8px)}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="formView">
+    <header class="intro">
+      <p class="course">SELF is the new WEALTH · วิชาปาจื้อ (Bazi)</p>
+      <h1>ดูพื้นดวงธาตุตัวตน</h1>
+      <p>กรอกวันเกิด เวลาเกิด และเพศ แอปจะขึ้นผังดวง 4 หลัก นับกำลังดิถีตามเอกสารอบรม แล้วต่อยอดถึงชีวิตทุกด้าน วัยจร 10 ปี ปีดีปีร้ายพร้อมวิธีแก้ วันดี และการดูกับคนรอบตัว</p>
+      <div class="hanzi-row" aria-hidden="true"><span style="background:var(--wood)">木</span><span style="background:var(--fire)">火</span><span style="background:var(--earth)">土</span><span style="background:var(--metal)">金</span><span style="background:var(--water)">水</span></div>
+    </header>
+    <form class="card" id="f" novalidate>
+      <div class="field"><label class="l" for="nm">ชื่อเล่น <span style="font-weight:400;color:var(--muted)">(ไม่บังคับ)</span></label><input type="text" id="nm" autocomplete="nickname" placeholder="เช่น อิ๋ม"></div>
+      <div class="field"><label class="l" for="dt">วันเกิด (ค.ศ.)</label><input type="date" id="dt" min="1900-01-01" max="2100-12-31" required><div class="hint" id="be"></div></div>
+      <div class="field"><label class="l" for="tm">เวลาเกิด</label><input type="time" id="tm"><label class="check"><input type="checkbox" id="notime"> ไม่ทราบเวลาเกิด (คำนวณ 3 หลัก)</label></div>
+      <div class="field"><span class="l" id="gl">เพศ</span><div class="seg" role="radiogroup" aria-labelledby="gl"><label><input type="radio" name="g" value="m"><span>ชาย</span></label><label><input type="radio" name="g" value="f"><span>หญิง</span></label></div><div class="hint">ใช้หาทิศทางวัยจร 10 ปี และดาวคู่ครอง</div></div>
+      <div class="field"><label class="l" for="pl">สถานที่เกิด</label><select id="pl"></select><div class="hint">ใช้ปรับเป็นเวลาสุริยะจริงแบบเดียวกับ chinesemetasoft</div></div>
+      <div class="field hidden" id="customPl"><div class="row2"><div><label class="l" for="ctz">เขตเวลา (UTC+)</label><input type="number" id="ctz" step="0.5" value="7" inputmode="decimal"></div><div><label class="l" for="clon">ลองจิจูด (°E ใส่ลบถ้า W)</label><input type="number" id="clon" step="0.01" value="100.5" inputmode="decimal"></div></div><div class="hint">ดูลองจิจูดของเมืองเกิดได้จาก Google Maps</div></div>
+      <details class="adv"><summary>ตั้งค่าความแม่นยำ</summary>
+        <label class="check"><input type="checkbox" id="solar" checked> ปรับเวลาสุริยะจริงตามลองจิจูด (แนะนำ)</label>
+        <label class="check"><input type="checkbox" id="dst"> เวลาเกิดเป็นเวลาออมแสง (DST) ลบ 1 ชั่วโมง</label>
+        <div class="hint" style="margin:2px 0 8px 28px">จีน 1986–1991 และเกาหลี 1987–1988 แอปปรับให้อัตโนมัติ ส่วนฮ่องกง ไต้หวัน ญี่ปุ่นช่วงก่อนปี 1980 ให้ติ๊กเองถ้าเกิดช่วงฤดูร้อน</div>
+        <label class="l" for="zi" style="margin-top:8px">คนเกิด 23:00–24:00 น.</label>
+        <select id="zi"><option value="23">เปลี่ยนวันตั้งแต่ 23:00 (ตำราดั้งเดิม)</option><option value="00">เปลี่ยนวันตอนเที่ยงคืน (แบ่งยามชวดต้น–ปลาย)</option></select>
+      </details>
+      <p class="err" id="err" role="alert"></p>
+      <button class="go" type="submit">ขึ้นผังดวง</button>
+    </form>
+  </div>
+
+  <div id="resView" class="hidden"></div>
+</div>
+<script>
+const BZ = (() => {
+  const STEM_TH=['เจี๋ย','อี่','ปิ่ง','ติง','อู้','จี่','เกิง','ซิน','เหริน','กุ่ย'];
+  const STEM_EN=['Jia','Yi','Bing','Ding','Wu','Ji','Geng','Xin','Ren','Gui'];
+  const STEM_ZH='甲乙丙丁戊己庚辛壬癸';
+  const BR_ZH='子丑寅卯辰巳午未申酉戌亥';
+  const BR_EN=['Zi','Chou','Yin','Mao','Chen','Si','Wu','Wei','Shen','You','Xu','Hai'];
+  const BR_TH=['ชวด','ฉลู','ขาล','เถาะ','มะโรง','มะเส็ง','มะเมีย','มะแม','วอก','ระกา','จอ','กุน'];
+  const BR_ANIMAL=['หนู','วัว','เสือ','กระต่าย','มังกร','งูเล็ก','ม้า','แพะ','ลิง','ไก่','สุนัข','หมู'];
+  const EL=['ไม้','ไฟ','ดิน','ทอง','น้ำ'];
+  const EL_ZH='木火土金水';
+  const BR_EL=[4,2,0,0,2,1,1,2,3,3,2,4];
+  const BR_HIDDEN={1:3,4:4,7:0,10:1};
+  const BR_MAIN=[9,5,0,1,4,2,3,5,6,7,4,8];
+  const stemEl=s=>Math.floor(s/2);
+  const yang=s=>s%2===0;
+  function rel(x,d){ // element x relative to DM element d
+    if(x===d) return 'comp';
+    if((x+1)%5===d) return 'res';
+    if((d+1)%5===x) return 'out';
+    if((d+2)%5===x) return 'wealth';
+    return 'power';
+  }
+  function tenGod(s,dm){
+    const r=rel(stemEl(s),stemEl(dm)); const same=yang(s)===yang(dm);
+    return {comp:same?'F':'RW',res:same?'IR':'DR',out:same?'EG':'HO',wealth:same?'IW':'DW',power:same?'7K':'DO'}[r];
+  }
+  function jdn(y,m,d){const a=Math.floor((14-m)/12),yy=y+4800-a,mm=m+12*a-3;return d+Math.floor((153*mm+2)/5)+365*yy+Math.floor(yy/4)-Math.floor(yy/100)+Math.floor(yy/400)-32045;}
+  function sunLon(jd){
+    const T=(jd-2451545)/36525, r=Math.PI/180;
+    const L0=280.46646+36000.76983*T+0.0003032*T*T;
+    const M=(357.52911+35999.05029*T-0.0001537*T*T)*r;
+    const C=(1.914602-0.004817*T-0.000014*T*T)*Math.sin(M)+(0.019993-0.000101*T)*Math.sin(2*M)+0.000289*Math.sin(3*M);
+    const om=(125.04-1934.136*T)*r;
+    return (((L0+C-0.00569-0.00478*Math.sin(om))%360)+360)%360;
+  }
+  function eot(y,m,d){ // minutes
+    const N=jdn(y,m,d)-jdn(y,1,1)+1, B=2*Math.PI*(N-81)/365;
+    return 9.87*Math.sin(2*B)-7.53*Math.cos(B)-1.5*Math.sin(B);
+  }
+  // input: {y,m,d,h,mi (null if unknown), tz, lon, solar:boolean}
+  function compute(inp){
+    const {y,m,d,tz,lon}=inp; const known=inp.h!=null;
+    const h=known?inp.h:12, mi=known?inp.mi:0;
+    const utMs=Date.UTC(y,m-1,d,h,mi)-tz*3600000;
+    const jd=utMs/86400000+2440587.5;
+    const L=sunLon(jd);
+    const mIdx=Math.floor((((L-315)%360)+360)%360/30); // 0=Yin month
+    let cy=y; if(m<=2 && mIdx>=10) cy=y-1;
+    const ys=((cy-4)%10+10)%10, yb=((cy-4)%12+12)%12;
+    const ms=(((ys%5)*2+2)+mIdx)%10, mb=(mIdx+2)%12;
+    // solar time for day/hour
+    let corr=0; if(inp.solar) corr=(lon-tz*15)*4+eot(y,m,d);
+    const sd=new Date(Date.UTC(y,m-1,d,h,mi)+Math.round(corr*60000));
+    let dy=sd.getUTCFullYear(), dmn=sd.getUTCMonth()+1, dd=sd.getUTCDate(); const sh=sd.getUTCHours(), smi=sd.getUTCMinutes();
+    let dayDate=new Date(Date.UTC(dy,dmn-1,dd));
+    if(known && sh>=23 && inp.zi!=='00') dayDate=new Date(dayDate.getTime()+86400000);
+    const n=(jdn(dayDate.getUTCFullYear(),dayDate.getUTCMonth()+1,dayDate.getUTCDate())+49)%60;
+    const ds=n%10, db=n%12;
+    let hs=null,hb=null;
+    if(known){ hb=Math.floor((sh+1)/2)%12; const hds=(inp.zi==='00'&&sh>=23)?(ds+1)%10:ds; hs=((hds%5)*2+hb)%10; }
+    // warnings
+    const warn=[];
+    const distTerm=Math.min(((L-315)%30+30)%30, 30-((L-315)%30+30)%30);
+    if(distTerm<0.06) warn.push('term');
+    if(known){ const tm=sh*60+smi; const off=((tm-60)%120+120)%120; if(off<8||off>112) warn.push('hour'); }
+    return {jd,pillars:{year:{s:ys,b:yb},month:{s:ms,b:mb},day:{s:ds,b:db},hour:known?{s:hs,b:hb}:null},
+      solarTime: known?`${String(sh).padStart(2,'0')}:${String(smi).padStart(2,'0')}`:null, corr, sunLon:L, cy, warn};
+  }
+  const W={year:{s:1,b:1},month:{s:1,b:3},day:{s:1,b:2},hour:{s:1,b:1}};
+  function analyze(P){
+    const dm=P.day.s, de=stemEl(dm);
+    const good=e=>{const r=rel(e,de);return r==='comp'||r==='res';};
+    const cells=[]; let score=0,max=0,rooted=false;
+    const counts={comp:0,res:0,out:0,wealth:0,power:0};
+    const starW={};
+    for(const k of ['hour','day','month','year']){
+      const p=P[k]; if(!p) continue;
+      // stem
+      if(k==='day'){cells.push({k,pos:'s',got:1,w:1,dm:true}); score+=1; max+=1;}
+      else { const e=stemEl(p.s), g=good(e)?1:0; score+=g; max+=1; counts[rel(e,de)]++;
+        const tg=tenGod(p.s,dm); starW[tg]=(starW[tg]||0)+1;
+        cells.push({k,pos:'s',got:g,w:1,tg}); }
+      // branch
+      const w=W[k].b, be=BR_EL[p.b]; let got=0; const hid=BR_HIDDEN[p.b];
+      if(good(be)) got=w; else if(hid!=null && good(hid)) got=w*0.5;
+      if(be===de || hid===de) rooted=true;
+      score+=got; max+=w; counts[rel(be,de)]++;
+      const tg=tenGod(BR_MAIN[p.b],dm); starW[tg]=(starW[tg]||0)+w;
+      cells.push({k,pos:'b',got,w,tg,hidden:hid});
+    }
+    const scaled=score*11/max;
+    let type;
+    if(scaled<=2.5 && !rooted) type='xweak';
+    else if(scaled<=5.5) type='weak';
+    else if(scaled<=6.5) type='bal';
+    else if(scaled<=9.5) type='strong';
+    else type='xstrong';
+    const E=r=>[de,(de+4)%5,(de+1)%5,(de+2)%5,(de+3)%5][['comp','res','out','wealth','power'].indexOf(r)];
+    let fav;
+    if(type==='weak'||type==='xstrong') fav=['comp','res'];
+    else if(type==='xweak'){ fav=counts.out>counts.wealth?['out','wealth']:['wealth','out']; }
+    else fav=['out','wealth'];
+    fav.push('power');
+    const favEl=fav.map(E);
+    const stars=Object.entries(starW).sort((a,b)=>b[1]-a[1]);
+    return {dm,de,cells,score,max,scaled,rooted,type,fav,favEl,counts,stars,E};
+  }
+  return {_sunLon:sunLon,_jdn:jdn,compute,analyze,rel,tenGod,stemEl,yang,STEM_TH,STEM_EN,STEM_ZH,BR_ZH,BR_EN,BR_TH,BR_ANIMAL,EL,EL_ZH,BR_EL,BR_HIDDEN,BR_MAIN};
+})();
+
+
+// ---- advanced engine ----
+Object.assign(BZ,(()=>{
+  const B=BZ;
+  const HIDDEN_FULL=[[9],[5,9,7],[0,2,4],[1],[4,1,9],[2,6,4],[3,5],[5,3,1],[6,8,4],[7],[4,7,3],[8,0]];
+  const LS_START={0:11,2:2,4:2,6:5,8:8,1:6,3:9,5:9,7:0,9:3};
+  const lifeStage=(s,b)=>{const st=LS_START[s];return s%2===0?(b-st+12)%12:(st-b+12)%12;};
+  const WENCHANG=[5,6,8,9,8,9,11,0,2,3];
+  const PEACH={0:9,2:3,1:6,3:0}, HORSE={0:2,2:8,1:11,3:5}, CANOPY={0:4,2:10,1:1,3:7}, GENERAL={0:0,2:6,1:9,3:3};
+  const BLADE={0:3,2:6,4:6,6:9,8:0};
+  const HARM6={0:1,1:0,2:11,11:2,3:10,10:3,4:9,9:4,5:8,8:5,6:7,7:6};
+  const HARMS={0:7,7:0,1:6,6:1,2:5,5:2,3:4,4:3,8:11,11:8,9:10,10:9};
+  const BREAK={0:9,9:0,3:6,6:3,4:1,1:4,7:10,10:7,2:11,11:2,5:8,8:5};
+  function punish(a,b){
+    if(a===b) return [4,6,9,11].includes(a);
+    const S=[[2,5,8],[1,10,7],[0,3]];
+    return S.some(g=>g.includes(a)&&g.includes(b));
+  }
+  function brRel(a,b){const r=[];
+    if((a+6)%12===b) r.push('clash');
+    if(HARM6[a]===b) r.push('harmony');
+    if(a!==b&&a%4===b%4) r.push('trine');
+    if(HARMS[a]===b) r.push('harm');
+    if(punish(a,b)) r.push('punish');
+    if(BREAK[a]===b) r.push('break');
+    return r;}
+  const stCombo=(a,b)=>(a+5)%10===b;
+  const stClash=(a,b)=>Math.abs(a-b)===6;
+  const sexa=(s,b)=>(((6*s-5*b)%60)+60)%60;
+  function voidOf(ds,db){const n=sexa(ds,db);const s0=n-n%10;const jb=s0%12;return [(jb+10)%12,(jb+11)%12];}
+  function elemDist(P){const d=[0,0,0,0,0];const W={year:1,month:3,day:2,hour:1};
+    for(const k of ['year','month','day','hour']){const p=P[k];if(!p)continue;d[B.stemEl(p.s)]+=1;
+      const h=B.BR_HIDDEN[p.b];if(h!=null){d[2]+=W[k]*.5;d[h]+=W[k]*.5;}else d[B.BR_EL[p.b]]+=W[k];}
+    const t=d.reduce((x,y)=>x+y,0);return d.map(x=>x/t);}
+  function solveLon(target,jd){for(let i=0;i<7;i++){const L=B._sunLon(jd);const d=((target-L+540)%360)-180;jd+=d/0.98565;}return jd;}
+  function monthStarts(cy){ // returns 13 JDs: start of each Chinese month of year cy (k=0 Yin) + next Li Chun
+    const out=[];const base=B._jdn(cy,2,4)-0.5;
+    for(let k=0;k<=12;k++) out.push(solveLon((315+30*k)%360,base+k*30.4368));
+    return out;}
+  function jdToLocal(jd,tz){const ms=(jd-2440587.5)*86400000+tz*3600000;return new Date(ms);} // read with getUTC*
+  function luck(r,P,gender){
+    const fwd=(gender==='m')===(P.year.s%2===0);
+    const L=r.sunLon, off=((L-315)%30+30)%30;
+    let tj; if(fwd) tj=solveLon((L-off+30+360)%360,r.jd+(30-off)/0.98565); else tj=solveLon((L-off+360)%360,r.jd-off/0.98565);
+    const days=Math.abs(tj-r.jd), start=days/3;
+    const mn=sexa(P.month.s,P.month.b); const list=[];
+    for(let i=1;i<=9;i++){const n=((mn+(fwd?i:-i))%60+60)%60;list.push({s:n%10,b:n%12,from:start+10*(i-1),to:start+10*i});}
+    return {fwd,start,list};}
+  return {HIDDEN_FULL,lifeStage,WENCHANG,PEACH,HORSE,CANOPY,GENERAL,BLADE,HARM6,HARMS,BREAK,brRel,stCombo,stClash,sexa,voidOf,elemDist,solveLon,monthStarts,jdToLocal,luck};
+})());
+
+// ---- professional layer: detailed strength, climate (调候), pattern (格局), Na Yin, calibration ----
+Object.assign(BZ,(()=>{
+  const B=BZ;
+  const HW={1:[1],2:[0.7,0.3],3:[0.6,0.3,0.1]};
+  const SEASON_EL=[4,2,0,0,2,1,1,2,3,3,2,4];
+  function seasonMult(e,S){ if(e===S) return 1.3; if((S+1)%5===e) return 1.15; if((e+1)%5===S) return 1.0; if((e+2)%5===S) return 0.9; return 0.8; }
+  function proStrength(P){
+    const dm=P.day.s, de=B.stemEl(dm), S=SEASON_EL[P.month.b];
+    const raw=[0,0,0,0,0];
+    const posW={year:1,month:2,day:1.2,hour:1};
+    for(const k of ['year','month','day','hour']){ const p=P[k]; if(!p) continue;
+      raw[B.stemEl(p.s)]+=1;
+      const hs=B.HIDDEN_FULL[p.b], w=HW[hs.length]; hs.forEach((s,i)=>raw[B.stemEl(s)]+=w[i]*posW[k]); }
+    const adj=raw.map((v,e)=>v*seasonMult(e,S)); const tot=adj.reduce((a,b)=>a+b,0);
+    const pct=adj.map(v=>v/tot);
+    const sup=pct[de]+pct[(de+4)%5];
+    const st=['旺','相','休','囚','死'][[1.3,1.15,1.0,0.9,0.8].indexOf(seasonMult(de,S))];
+    return {pct,sup,season:S,dmState:st};
+  }
+  // 穷通宝鉴 regulating stems [dayStem][monthBranch]
+  const CLIMATE={
+   0:{2:'丙癸',3:'庚丙丁戊己',4:'庚丁壬',5:'癸丁庚',6:'癸丁庚',7:'癸丁庚',8:'庚丁壬',9:'庚丁丙',10:'庚甲丁壬癸',11:'庚丁丙戊',0:'丁庚丙',1:'丁庚丙'},
+   1:{2:'丙癸',3:'丙癸',4:'癸丙戊',5:'癸',6:'癸丙',7:'癸丙',8:'丙癸己',9:'癸丙丁',10:'癸辛',11:'丙戊',0:'丙',1:'丙'},
+   2:{2:'壬庚',3:'壬己',4:'壬甲',5:'壬癸庚',6:'壬庚',7:'壬庚',8:'壬戊',9:'壬癸',10:'甲壬',11:'甲戊庚壬',0:'壬戊己',1:'壬甲'},
+   3:{2:'甲庚',3:'庚甲',4:'甲庚',5:'甲庚',6:'壬庚癸',7:'甲壬庚',8:'甲庚丙戊',9:'甲庚丙戊',10:'甲庚戊',11:'甲庚',0:'甲庚',1:'甲庚'},
+   4:{2:'丙甲癸',3:'丙甲癸',4:'甲丙癸',5:'甲丙癸',6:'壬甲丙',7:'癸丙甲',8:'丙癸甲',9:'丙癸',10:'甲丙癸',11:'甲丙',0:'丙甲',1:'丙甲'},
+   5:{2:'丙庚甲',3:'甲癸丙',4:'丙癸甲',5:'癸丙',6:'癸丙',7:'癸丙',8:'丙癸',9:'丙癸',10:'甲丙癸',11:'丙甲戊',0:'丙甲戊',1:'丙甲戊'},
+   6:{2:'戊甲壬丙丁',3:'丁甲庚丙',4:'甲丁壬癸',5:'壬戊丙丁',6:'壬癸',7:'丁甲',8:'丁甲',9:'丁甲丙',10:'甲壬',11:'丁丙',0:'丁甲丙',1:'丙丁甲'},
+   7:{2:'己壬庚',3:'壬甲',4:'壬甲',5:'壬甲癸',6:'壬己癸',7:'壬庚甲',8:'壬甲戊',9:'壬甲',10:'壬甲',11:'壬丙',0:'丙戊壬甲',1:'丙壬戊己'},
+   8:{2:'庚丙戊',3:'戊辛庚',4:'甲庚',5:'壬辛庚癸',6:'癸庚辛',7:'辛甲',8:'戊丁',9:'甲庚',10:'甲丙',11:'戊丙庚',0:'戊丙',1:'丙丁甲'},
+   9:{2:'辛丙',3:'庚辛',4:'丙辛甲',5:'辛',6:'庚辛壬癸',7:'庚辛壬癸',8:'丁',9:'辛丙',10:'辛甲壬癸',11:'庚辛戊丁',0:'丙辛',1:'丙丁'}};
+  function climate(P){ const str=CLIMATE[P.day.s][P.month.b]; const stems=[...str].map(c=>B.STEM_ZH.indexOf(c)); const b=P.month.b;
+    const season=[5,6,7].includes(b)?'hot':[11,0,1].includes(b)?'cold':'mild'; return {stems,season}; }
+  function pattern(P){ const dm=P.day.s, hs=B.HIDDEN_FULL[P.month.b]; const shown=['year','month','hour'].filter(k=>P[k]).map(k=>P[k].s);
+    let pick=hs.find(s=>shown.includes(s)); const revealed=pick!=null; if(pick==null) pick=hs[0];
+    let g=B.tenGod(pick,dm); return {g,stem:pick,revealed}; }
+  const NAYIN=[['海中金','ทองในทะเล'],['炉中火','ไฟในเตา'],['大林木','ไม้ป่าใหญ่'],['路旁土','ดินริมทาง'],['剑锋金','ทองคมดาบ'],['山头火','ไฟบนภูเขา'],['涧下水','น้ำในลำธาร'],['城头土','ดินกำแพงเมือง'],['白蜡金','ทองขี้ผึ้งขาว'],['杨柳木','ไม้หลิว'],['泉中水','น้ำในบ่อน้ำพุ'],['屋上土','ดินบนหลังคา'],['霹雳火','ไฟสายฟ้า'],['松柏木','ไม้สนไซเปรส'],['长流水','น้ำไหลยาว'],['沙中金','ทองในทราย'],['山下火','ไฟใต้ภูเขา'],['平地木','ไม้ที่ราบ'],['壁上土','ดินบนผนัง'],['金箔金','ทองเปลว'],['覆灯火','ไฟตะเกียง'],['天河水','น้ำทางช้างเผือก'],['大驿土','ดินทางหลวง'],['钗钏金','ทองเครื่องประดับ'],['桑柘木','ไม้หม่อน'],['大溪水','น้ำลำห้วยใหญ่'],['沙中土','ดินในทราย'],['天上火','ไฟบนฟ้า'],['石榴木','ไม้ทับทิม'],['大海水','น้ำมหาสมุทร']];
+  const nayin=(s,b)=>NAYIN[Math.floor(B.sexa(s,b)/2)];
+  const NAYIN_EL=[3,1,0,2,3,1,4,2,3,0,4,2,1,0,4,3,1,0,2,3,1,4,2,3,0,4,2,1,0,4];
+  const nayinEl=(s,b)=>NAYIN_EL[Math.floor(B.sexa(s,b)/2)];
+  // ridge regression: minimize |t - Fw|^2 + lam |w - prior|^2
+  function ridge(F,t,prior,lam,wts){ const n=5; const A=[...Array(n)].map((_,i)=>[...Array(n)].map((_,j)=>i===j?lam:0)); const bv=prior.map(p=>p*lam);
+    F.forEach((f,r)=>{const w=wts?wts[r]:1; for(let i=0;i<n;i++){ bv[i]+=w*f[i]*t[r]; for(let j=0;j<n;j++) A[i][j]+=w*f[i]*f[j]; }});
+    for(let i=0;i<n;i++){ let p=i; for(let r=i+1;r<n;r++) if(Math.abs(A[r][i])>Math.abs(A[p][i])) p=r; [A[i],A[p]]=[A[p],A[i]]; [bv[i],bv[p]]=[bv[p],bv[i]];
+      for(let r=0;r<n;r++){ if(r===i) continue; const f=A[r][i]/A[i][i]; for(let c=i;c<n;c++) A[r][c]-=f*A[i][c]; bv[r]-=f*bv[i]; } }
+    return bv.map((v,i)=>v/A[i][i]); }
+  return {proStrength,climate,pattern,nayin,nayinEl,ridge,SEASON_EL};
+})());
+
+const EL_COLOR=['#2F7A4B','#C4362C','#8C5E2A','#78818F','#1F4F91'];
+const PROFILE={
+ 0:{t:'นักพัฒนา',tr:['ทะเยอทะยาน','ไม่เปลี่ยนแปลงง่าย ๆ','เปลี่ยนแปลงด้วยเหตุผล','มีเมตตา','มุ่งมั่นไปที่เป้าหมายเดียว','ตรงไปตรงมา','ชอบพัฒนานวัตกรรม'],f:['Elon Musk','Rosé','Bernard Arnault'],img:'ไม้ยืนต้น'},
+ 1:{t:'นักสร้างเครือข่าย',tr:['สร้างเครือข่ายเก่ง','สื่อสารเก่ง','มีไหวพริบ','วิสัยทัศน์เฉียบแหลม','แก้ไขปัญหาเฉพาะหน้าได้ดี','วัตถุนิยม','เจ้ากี้เจ้าการ','รู้วิธีดึงความสนใจ'],f:['Rihanna','Cristiano Ronaldo','Oprah Winfrey'],img:'ไม้ล้มลุก'},
+ 2:{t:'ผู้นำ',tr:['กระตือรือร้น','มีชีวิตชีวา','มองไปข้างหน้า','มองโลกในแง่ดี','มีกิจวัตรที่ชัดเจน','เหงาบางครั้ง','ชอบเป็นจุดสนใจ'],f:['Steve Jobs','Leonardo DiCaprio','J.K. Rowling'],img:'ดวงอาทิตย์'},
+ 3:{t:'นักสร้างแรงบันดาลใจ',tr:['เก่งสร้างแรงบันดาลใจ','ผู้นำทางความคิด','เสียสละเพื่อผู้อื่น','มารยาทดี','อ่อนไหว','ขายเก่ง','โดดเด่นเมื่อกล้าตัดสินใจ'],f:['Taylor Swift','Kim Kardashian','Tory Burch'],img:'แสงเทียน'},
+ 4:{t:'ผู้ปกป้อง',tr:['น่าเชื่อถือ','หนักแน่นมั่นคง','จงรักภักดี','โดดเด่นดุจภูผา','มีหลักการเป็นของตนเอง','ยึดติด','รอบคอบ','ชอบรักษามาตรฐานความปลอดภัย'],f:['Mark Zuckerberg','Kendall Jenner','Lisa'],img:'ภูเขาหิน'},
+ 5:{t:'ผู้ดูแล',tr:['เอื้อเฟื้อเผื่อแผ่','ช่วยเหลือผู้อื่น','นักบริหารทรัพยากร','ยืดหยุ่น','ช้าแต่ชัวร์','เก็บตัว','ชอบการรวมกลุ่มเพื่อความมั่นคง'],f:['Anne Hathaway','Shou Zi Chew','Sergey Brin'],img:'ดินเพาะปลูก'},
+ 6:{t:'นักรบ',tr:['มีใจรักในการแข่งขัน','ตรงไปตรงมา','ไม่เกรงกลัวสิ่งใด','แข็งแกร่ง','ชอบทำงานภายใต้แรงกดดันสูง','พัฒนาด้วยการฝึกฝนสุดโหด','ชอบใช้อำนาจควบคุม','ไปสู่เป้าหมายอย่างรวดเร็ว'],f:['Jeff Bezos','Donna Karan','Alice Walton'],img:'โลหะใช้งาน'},
+ 7:{t:'อัญมณี',tr:['นักพูดในที่สาธารณะ','รสนิยมดี','รู้วิธีดึงดูดผู้ชม','มุมมองแปลกใหม่','คิดนอกกรอบ','ชอบหาทางลัด','รักความสมบูรณ์แบบ','ชอบเป็นศูนย์กลางความสนใจ'],f:['Jensen Huang','Zendaya','Larry Page'],img:'โลหะสูงค่า'},
+ 8:{t:'นักผจญภัย',tr:['มีจิตใจเป็นผู้ประกอบการ','มีพลวัตสูง','ปรับตัวเก่ง','คว้าโอกาสได้ดี','โหยหาอิสรภาพ','เจ้าอารมณ์','สับสนง่าย','ชอบหาประสบการณ์ใหม่ ๆ'],f:['Warren Buffett','Jack Ma','Bill Gates'],img:'คลื่นทะเล'},
+ 9:{t:'นักปราชญ์',tr:['ชอบใช้ความคิด','รักอิสระ','ครูที่ดี','โน้มน้าวใจเก่งโดยผู้อื่นไม่ทันรู้ตัว','หยั่งรู้ถึงความสามารถของผู้อื่น','เปลี่ยนแปลงง่าย','ชอบเรื่องลึกลับ','เจ้าปัญญา'],f:['Larry Ellison','Huda Kattan','Jamie Oliver'],img:'ไอเมฆ'}
+};
+const ELINFO=[
+ {mean:'การเติบโต การเริ่มต้นใหม่ วิชาการ ความคิดสร้างสรรค์ ความเมตตา การแตกเครือข่ายความสัมพันธ์ใหม่',biz:'การศึกษา สิ่งทอ เฟอร์นิเจอร์ไม้ ธุรกิจเครือข่าย เกษตรกรรม การพัฒนาเทคโนโลยี',color:'เขียวอ่อน เขียวเข้ม',sw:['#8BC48A','#2F7A4B'],mat:'ไม้ ผ้า กระดาษ',shape:'เส้นตรงแนวตั้ง',act:'ให้ความรู้ทั้งศาสตร์และศิลป์',work:'งานออกแบบ การศึกษา เครือข่าย เกษตร',place:'ป่าเขา สวน นิทรรศการศิลปะ',cust:'ความคิดสร้างสรรค์ การพัฒนาเทคโนโลยีใหม่ การออกแบบ'},
+ {mean:'ชื่อเสียง ความเชื่อ ศรัทธา แรงบันดาลใจ ภาพลักษณ์ การตื่นรู้',biz:'การขาย การตลาด การสร้างแบรนด์ ความบันเทิง โซเชียลมีเดีย ความงาม อินฟลูเอนเซอร์ แฟชั่น AI เครื่องใช้ไฟฟ้า',color:'แดง ชมพู ม่วง',sw:['#C4362C','#E27AA0','#7B3FA0'],mat:'แสง ความร้อน',shape:'สามเหลี่ยม ดาว แฉกแหลม',act:'สร้างแรงบันดาลใจ ป้ายยา ปลุกใจ',work:'การขาย การตลาด ความบันเทิง AI ความเชื่อ',place:'งานเทศกาล วัด คอนเสิร์ต',cust:'แรงบันดาลใจ ศรัทธา การปลุกพลัง ความบันเทิงเร้าใจ การขายออนไลน์และขายปลีก'},
+ {mean:'ความมั่นคง เสถียรภาพ ความน่าเชื่อถือ ความสัมพันธ์ระยะยาว การสะสมรวบรวม การเป็นตัวกลาง',biz:'อสังหาริมทรัพย์ รับเหมาก่อสร้าง ดีลเลอร์ อาหารพื้นฐาน ประกันภัย ขายส่ง',color:'เหลือง ครีม เบจ น้ำตาล',sw:['#E3B83B','#EFE3C2','#8C5E2A'],mat:'ดิน โคลน หิน',shape:'สี่เหลี่ยม',act:'สร้างความปลอดภัย ช่วยสะสมรวบรวม',work:'งานตัวกลาง นายหน้า งานตรวจมาตรฐาน',place:'ร้านค้าลดราคา โบราณสถาน',cust:'ความมั่นคง เสถียรภาพ ความน่าเชื่อถือ ความอนุรักษนิยม ความดั้งเดิม ความเก่าแก่'},
+ {mean:'อำนาจ ความเร็ว ความแม่นยำ การปิดการขาย สิ่งของที่มีมูลค่าสูง',biz:'เครื่องจักร โลหะ อุปกรณ์โลหะ ยานยนต์ การเงิน การจัดการ อัญมณี สินค้าหรูหรา',color:'เงิน ทอง ขาวแวววาว',sw:['#C9CDD3','#C9A447','#F4F4F2'],mat:'โลหะ',shape:'วงกลม วงรี',act:'จัดระเบียบ ช่วยตัดสินใจเร็ว',work:'การเงิน การลงทุน กลุ่มลูกค้าหรูหรา',place:'สถานที่หรูหรา ธนาคาร',cust:'ระบบปฏิบัติการ การสั่งการที่รวดเร็ว ความเนี้ยบ หรูหรา โฉบเฉี่ยว พิถีพิถัน'},
+ {mean:'การปรับตัว ความยืดหยุ่น กลยุทธ์ การพักผ่อน ความสงบ สมาธิ ความคิดลึกซึ้ง ปัญญา',biz:'การสื่อสาร การวิเคราะห์ ที่ปรึกษา ขนส่ง การท่องเที่ยว สปา เครื่องดื่ม ประมง',color:'ฟ้า น้ำเงิน เทา ดำ',sw:['#7FB5E0','#1F4F91','#7D8590','#1A1A1A'],mat:'กระจกใส น้ำ ของเหลว',shape:'คลื่น โค้ง',act:'ให้คำปรึกษา ช่วยวางแผน สื่อสาร',work:'งานกลยุทธ์ งานบริการ เดินทางไกล',place:'แม่น้ำ ทะเล สถานปฏิบัติธรรม',cust:'งานบริการ ความยืดหยุ่น โทรคมนาคม ปิโตรเคมี'}
+];
+const REL={
+ comp:{n:'คู่ธาตุ',d:'ธาตุเดียวกับธาตุประจำตัว',sk:'ทักษะการสร้างพวกพ้อง'},
+ res:{n:'ธาตุก่อเกิด',d:'ธาตุที่มาก่อเกิดธาตุประจำตัว',sk:'ทักษะการคิดวิเคราะห์'},
+ out:{n:'ธาตุถ่ายเท',d:'ธาตุที่ธาตุประจำตัวถ่ายเทพลังให้',sk:'ทักษะการลงมือปฏิบัติ'},
+ wealth:{n:'ธาตุโชคลาภ',d:'ธาตุที่ธาตุประจำตัวไปพิฆาต',sk:'ทักษะการกำหนดเป้าหมาย'},
+ power:{n:'ธาตุอำนาจ',d:'ธาตุพิฆาต — ธาตุที่มาพิฆาตธาตุประจำตัว',sk:'ทักษะการสร้างชื่อเสียง'}
+};
+const TYPE={
+ xweak:{n:'ดิถีอ่อนพิเศษ',sub:'สละดิถี / ตามกระแส',rng:'1–2',how:'ลดกำลังดิถีไปที่ 0 คะแนน',lead:'ดิถีแทบไม่มีแรงหนุนและไม่มีรกราก วิธีรับความสำเร็จคือไม่ฝืน แต่ไหลไปกับธาตุที่แรงที่สุดในดวง'},
+ weak:{n:'ดิถีอ่อน',sub:'คะแนนน้อยกว่ากึ่งหนึ่งของคะแนนเต็ม',rng:'3–5',how:'เพิ่มกำลังดิถีไปที่ 6 คะแนน',lead:'ตัวตนยังได้แรงหนุนไม่พอ ความเฮงมาจากการเติมพวกพ้องและแหล่งพลังให้ตัวเอง'},
+ bal:{n:'ดิถีสมดุล',sub:'กึ่งกลางพอดี',rng:'6',how:'รักษากำลังดิถีไว้ที่ 6 คะแนน',lead:'ดวงอยู่ในจุดสมดุลแล้ว ใช้ธาตุที่ช่วยนำพลังออกไปสร้างผลงานและรายได้ โดยไม่เติมจนล้น'},
+ strong:{n:'ดิถีแข็ง',sub:'คะแนนมากกว่ากึ่งหนึ่งของคะแนนเต็ม',rng:'7–9',how:'ลดกำลังดิถีไปที่ 6 คะแนน',lead:'พลังตัวตนเหลือเฟือ ความเฮงมาจากการระบายพลังออกไปเป็นผลงานและเป้าหมาย'},
+ xstrong:{n:'ดิถีแข็งพิเศษ',sub:'แข็งจนเป็นกระแส',rng:'10–11',how:'เพิ่มกำลังดิถีไปที่ 11 คะแนน',lead:'ดวงทั้งผังหนุนตัวตนจนกลายเป็นกระแส วิธีรับความสำเร็จคือเสริมให้กระแสนี้แรงขึ้นอีก'}
+};
+const STAR={
+ F:{zh:'比肩',en:'Friend',th:'นักธุรกิจสายพรรคพวก',d:'พลังจากเพื่อนร่วมทางและทีม เหมาะกับหุ้นส่วน คอมมูนิตี้ และธุรกิจที่โตด้วยคนรอบตัว'},
+ RW:{zh:'劫财',en:'Rob Wealth',th:'นักธุรกิจสายแข่งขัน',d:'กล้าชิง กล้าต่อรอง ชอบตลาดที่มีคู่แข่ง เก่งการขยายส่วนแบ่งแบบเชิงรุก'},
+ DR:{zh:'正印',en:'Direct Resource',th:'นักธุรกิจสายเนิร์ด',d:'ขับเคลื่อนด้วยความรู้ ใบรับรอง และความน่าเชื่อถือทางวิชาการ'},
+ IR:{zh:'偏印',en:'Indirect Resource',th:'นักธุรกิจสายลึกลับ',d:'ความรู้เฉพาะทางหรือศาสตร์ที่คนทั่วไปเข้าไม่ถึง มุมมองไม่เหมือนใคร'},
+ EG:{zh:'食神',en:'Eating God',th:'นักธุรกิจสายอาร์ต',d:'สุนทรียะ อาหาร ศิลปะ งานสร้างสรรค์ที่ทำให้คนมีความสุข'},
+ HO:{zh:'伤官',en:'Hurting Officer',th:'นักธุรกิจสายแหวกขนบ',d:'ท้าทายกรอบเดิม นวัตกรรม การพูดและนำเสนอที่โดดเด่น'},
+ IW:{zh:'偏财',en:'Indirect Wealth',th:'นักธุรกิจสายเสี่ยงโชค',d:'ตาไวเรื่องโอกาส การลงทุน ดีลใหญ่ และเงินก้อนที่มาเป็นจังหวะ'},
+ DO:{zh:'正官',en:'Direct Officer',th:'นักธุรกิจสายขุนนาง',d:'ระบบ กฎระเบียบ ภาพลักษณ์ที่ดี เติบโตได้ดีในองค์กรหรือธุรกิจที่มีมาตรฐาน'},
+ '7K':{zh:'七杀',en:'Seven Killings',th:'นักธุรกิจสายแม่ทัพ',d:'เด็ดขาด กล้าเสี่ยง บุกเบิก คุมคนหมู่มากได้ในสถานการณ์กดดัน'},
+ DW:{zh:'正财',en:'Direct Wealth',th:'นักธุรกิจสายบริหาร',d:'บริหารเงินและทรัพยากรเป็นระบบ รายได้มั่นคงสม่ำเสมอ'}
+};
+const NOBLE={0:[1,7],4:[1,7],6:[1,7],1:[0,8],5:[0,8],2:[9,11],3:[9,11],8:[3,5],9:[3,5],7:[2,6]};
+const HARMONY={0:1,1:0,2:11,11:2,3:10,10:3,4:9,9:4,5:8,8:5,6:7,7:6};
+const POS={hour:{n:'หลักยาม',m:'บริวาร'},day:{n:'หลักวัน',m:'ดิถี / คู่ครอง'},month:{n:'หลักเดือน',m:'การงาน'},year:{n:'หลักปี',m:'ผู้ใหญ่ ทางไกล'}};
+const PLACES=[
+ ['กรุงเทพฯ และปริมณฑล',7,100.52],['เชียงใหม่',7,98.99],['เชียงราย',7,99.83],['พิษณุโลก',7,100.26],['นครสวรรค์',7,100.12],['ขอนแก่น',7,102.84],['อุดรธานี',7,102.79],['นครราชสีมา',7,102.10],['อุบลราชธานี',7,104.85],['ชลบุรี / พัทยา',7,100.98],['ระยอง',7,101.25],['หัวหิน / ประจวบฯ',7,99.96],['สุราษฎร์ธานี',7,99.33],['ภูเก็ต',7,98.39],['หาดใหญ่ / สงขลา',7,100.47],
+ ['เวียงจันทน์',7,102.60],['โฮจิมินห์',7,106.70],['สิงคโปร์',8,103.82],['กัวลาลัมเปอร์',8,101.69],['ฮ่องกง',8,114.17],['ปักกิ่ง',8,116.40],['เซี่ยงไฮ้',8,121.47],['ไทเป',8,121.56],['โซล',9,126.98],['โตเกียว',9,139.69]
+];
+
+const DIR=['ตะวันออก','ใต้','ตะวันออกเฉียงเหนือ / ตะวันตกเฉียงใต้ และกลางบ้าน','ตะวันตก / ตะวันตกเฉียงเหนือ','เหนือ'];
+const NUM=['3, 8','2, 7','5, 0','4, 9','1, 6'];
+const ORGAN=['ตับ ถุงน้ำดี เส้นเอ็น และสายตา','หัวใจ ระบบไหลเวียนเลือด และการนอน','กระเพาะ ม้าม และระบบย่อยอาหาร','ปอด ลำไส้ใหญ่ ผิวหนัง และทางเดินหายใจ','ไต กระเพาะปัสสาวะ กระดูก และหู'];
+const HEALTH_TIP=['ยืดเหยียดสม่ำเสมอ พักสายตา ลดของมันและแอลกอฮอล์','นอนให้เป็นเวลา คุมความเครียด ตรวจความดันและหัวใจตามวัย','กินตรงเวลา เคี้ยวให้ละเอียด ลดของหวานและการกินจุกจิก','หายใจลึก ออกกำลังกายที่ได้เหงื่อ ดูแลผิวและอากาศที่หายใจ','ดื่มน้ำให้พอ ไม่อั้นปัสสาวะ ไม่หักโหมจนหมดแรง'];
+const STAGE=[['长生','เกิดใหม่'],['沐浴','อาบน้ำ'],['冠带','สวมมงกุฎ'],['临官','รับตำแหน่ง'],['帝旺','รุ่งเรืองสุด'],['衰','เริ่มถดถอย'],['病','อ่อนแรง'],['死','หยุดนิ่ง'],['墓','คลังสะสม'],['绝','สิ้นสุด'],['胎','ปฏิสนธิ'],['养','ฟูมฟัก']];
+const GOD_YEAR={
+ F:{th:'เพื่อน ทีม และคู่แข่งเข้ามามีบทบาท',g:'ได้แรงหนุนจากทีมและเพื่อนร่วมทาง เหมาะหาพาร์ทเนอร์และขยายเครือข่าย',c:'มีคนมาแบ่งผลประโยชน์หรือแย่งบทบาท ค่าใช้จ่ายกับเพื่อนพ้องเพิ่ม',fix:'แบ่งบทบาทและผลประโยชน์ให้ชัด เขียนเป็นลายลักษณ์อักษร'},
+ RW:{th:'การแข่งขันและการชิงส่วนแบ่ง',g:'กล้าลุยและชนะในสนามที่มีคู่แข่ง ได้ส่วนแบ่งเพิ่ม',c:'เสียเงินจากการให้ยืม ค้ำประกัน หรือหุ้นส่วน ตัดสินใจเร็วเกินไป',fix:'ไม่ค้ำประกัน ไม่ให้ยืมก้อนใหญ่ แยกบัญชีธุรกิจกับส่วนตัว'},
+ DR:{th:'การเรียนรู้ ผู้ใหญ่ และเอกสาร',g:'มีผู้ใหญ่ช่วย เรียนต่อ สอบ ได้ใบรับรอง เรื่องบ้านและเอกสารคืบหน้า',c:'คิดมาก รอความช่วยเหลือจนช้า พึ่งคนอื่นมากเกินไป',fix:'ตั้งเดดไลน์ให้ตัวเอง ลงมือก่อนที่ทุกอย่างจะพร้อมร้อยเปอร์เซ็นต์'},
+ IR:{th:'ความรู้เฉพาะทางและการเปลี่ยนมุมคิด',g:'เข้าใจศาสตร์ใหม่ ไอเดียแปลก งานวิจัยและงานเบื้องหลังเด่น',c:'เก็บตัว ระแวง ลังเล แผนสะดุดกลางทาง',fix:'คุยแผนกับคนที่ไว้ใจ อย่าเก็บเรื่องสำคัญไว้คนเดียว'},
+ EG:{th:'ผลงาน ความสุข และความคิดสร้างสรรค์',g:'ผลงานออกมาดี มีความสุขกับงาน เหมาะเปิดตัวสินค้า งานอาหาร งานศิลป์',c:'สบายจนขาดวินัย ใช้จ่ายเพื่อความสุขมากไป',fix:'ตั้งงบใช้จ่ายส่วนตัว และตั้งเป้าหมายรายสัปดาห์'},
+ HO:{th:'การแสดงออก การพูด และการเปลี่ยนกรอบเดิม',g:'นำเสนอเก่ง ได้ชื่อจากความกล้าคิดต่าง เหมาะเริ่มสิ่งใหม่',c:'คำพูดหรือโพสต์พาเรื่อง ขัดแย้งกับหัวหน้าหรือระบบ ระวังเรื่องกฎหมาย',fix:'คิดก่อนพูดหรือโพสต์ อ่านสัญญาและเงื่อนไขให้ละเอียด'},
+ IW:{th:'โอกาสเงินก้อนและดีลใหม่',g:'มีดีลหรือรายได้พิเศษ เหมาะขยายธุรกิจหรือลงทุนในสิ่งที่ศึกษามาแล้ว',c:'เสี่ยงลงทุนเกินตัว เงินเข้าเร็วออกเร็ว',fix:'ลงทุนเฉพาะสิ่งที่เข้าใจ กำหนดวงเงินที่เสียได้ไว้ก่อน'},
+ DW:{th:'รายได้ประจำและการบริหารเงิน',g:'รายได้มั่นคง ได้ผลตอบแทนจากความขยัน เหมาะวางระบบการเงิน',c:'ภาระค่าใช้จ่ายเพิ่ม งานหนักแต่ผลตอบแทนไม่เท่าที่หวัง',fix:'ทำงบรายรับรายจ่าย และกันเงินสำรองอย่างน้อย 6 เดือน'},
+ DO:{th:'ตำแหน่ง ระเบียบ และความรับผิดชอบ',g:'มีโอกาสเลื่อนตำแหน่ง ได้รับการยอมรับ ภาพลักษณ์ดี',c:'ภาระหน้าที่มาก ถูกตรวจสอบ กดดันจากกฎระเบียบ',fix:'ทำงานตามขั้นตอน เก็บหลักฐานการทำงาน อย่าลัดขั้นตอน'},
+ '7K':{th:'แรงกดดันและบททดสอบ',g:'ได้นำงานยาก ผ่านบททดสอบแล้วโตแบบก้าวกระโดด',c:'เครียด ขัดแย้งกับผู้มีอำนาจ เจ็บป่วยหรืออุบัติเหตุจากการหักโหม',fix:'พักให้พอ ตรวจสุขภาพ ขับขี่อย่างระมัดระวัง เลี่ยงการปะทะตรง ๆ'}
+};
+const PALACE_CLASH={year:'เรื่องผู้ใหญ่ ครอบครัวใหญ่ และการเดินทางไกลมีความเคลื่อนไหว',month:'การงานมีความเปลี่ยนแปลง อาจย้ายงาน เปลี่ยนทีม หรือโครงสร้างที่ทำงานขยับ',day:'เรื่องคู่ครอง บ้าน และตัวเองมีการเปลี่ยนแปลง อาจย้ายบ้านหรือต้องปรับตัวกับคนใกล้ตัว',hour:'ลูกน้อง ลูก หรือโปรเจกต์ใหม่มีเรื่องให้ปรับแผน'};
+const PALACE_FIX={year:'ดูแลสุขภาพผู้ใหญ่ในบ้าน ตรวจเอกสารเดินทางและประกันให้พร้อม',month:'ถ้าจะย้ายงานให้มีงานใหม่รองรับก่อน เก็บผลงานไว้เป็นหลักฐาน',day:'ให้เวลากับคู่และครอบครัว เลี่ยงตัดสินใจเรื่องบ้านหรือความสัมพันธ์ตอนอารมณ์ไม่นิ่ง',hour:'วางแผนสำรองให้โปรเจกต์ใหม่ สื่อสารกับทีมให้บ่อยขึ้น'};
+const GROUP_CAREER={
+ comp:'ทำงานได้ดีเมื่อมีทีมหรือหุ้นส่วน เหมาะงานที่ต้องประสานคน การขายแบบทีม ธุรกิจเครือข่าย',
+ res:'เด่นด้านความรู้ การวิเคราะห์ และการวางแผน เหมาะสายวิชาการ ที่ปรึกษา งานเอกสาร การศึกษา',
+ out:'เด่นด้านการลงมือทำและสร้างผลงาน เหมาะงานสร้างสรรค์ ผู้เชี่ยวชาญ ฟรีแลนซ์ งานนำเสนอ',
+ wealth:'เด่นด้านการตั้งเป้าหมายและจับโอกาสทางเงิน เหมาะธุรกิจ การขาย การค้า การบริหารทรัพยากร',
+ power:'เด่นด้านความรับผิดชอบและการคุมระบบ เหมาะงานบริหาร องค์กรใหญ่ ราชการ งานที่มีตำแหน่ง'};
+const GROUP_LACK={
+ comp:'คู่ธาตุไม่ปรากฏเด่นในผัง มักแบกงานเอง ควรสร้างทีมหรือเครือข่ายที่ไว้ใจได้',
+ res:'ธาตุก่อเกิดไม่ปรากฏเด่นในผัง เรียนรู้จากการลงมือมากกว่าตำรา ควรมีพี่เลี้ยงหรือที่ปรึกษา',
+ out:'ธาตุถ่ายเทไม่ปรากฏเด่นในผัง ฝีมือดีแต่คนอาจไม่เห็น ควรหาช่องทางแสดงผลงานให้ชัด',
+ wealth:'ธาตุโชคลาภไม่ปรากฏเด่นในผัง ไม่ได้ขับเคลื่อนด้วยเงินโดยธรรมชาติ ควรตั้งเป้าหมายการเงินเป็นตัวเลข',
+ power:'ธาตุอำนาจไม่ปรากฏเด่นในผัง ไม่ชอบถูกควบคุม เหมาะเป็นนายตัวเองหรือทำงานที่มีอิสระ'};
+const HOWTALK=[
+ 'พูดตรงไปตรงมาและมีเหตุผลรองรับ เขาไม่ชอบถูกเร่งให้เปลี่ยนใจ ให้เวลาคิด และชูเป้าหมายระยะยาว',
+ 'คุยแบบยืดหยุ่น เปิดคอนเนกชันให้เขา ชมไหวพริบ และยื่นข้อเสนอที่เขาเอาไปต่อยอดได้',
+ 'เปิดด้วยภาพใหญ่และพลังบวก ให้เขาได้เป็นคนเด่นในวงคุย พูดกระชับ อย่าลงรายละเอียดยาวในช่วงแรก',
+ 'ใส่ใจความรู้สึกและมารยาท เล่าเรื่องที่มีความหมาย ให้เห็นว่างานนี้ช่วยคนอื่นได้อย่างไร',
+ 'เตรียมข้อมูลให้แน่น พูดเรื่องความน่าเชื่อถือ ความปลอดภัย และมาตรฐาน อย่าเร่งปิด ให้เขาตัดสินใจเอง',
+ 'สร้างความไว้ใจก่อน คุยเรื่องการดูแลคนและการใช้ทรัพยากรให้คุ้ม ค่อยเป็นค่อยไป',
+ 'สั้น ตรง เร็ว มีตัวเลขและข้อสรุป เคารพการตัดสินใจของเขา และท้าทายด้วยเป้าหมายที่ชัด',
+ 'นำเสนอให้เนี้ยบและดูดี ชมมุมมองของเขา เลี่ยงคำวิจารณ์ที่ตรงเกินไปต่อหน้าคนอื่น',
+ 'ชวนคุยเรื่องโอกาสใหม่ ให้อิสระ ยืดหยุ่นเรื่องรายละเอียด สรุปเป็นข้อ ๆ เพราะเขาคิดเร็วเปลี่ยนเร็ว',
+ 'ให้ข้อมูลเชิงลึกและเวลาคิด เคารพความเป็นส่วนตัว ถามความเห็นเขา เพราะเขามักเห็นสิ่งที่คนอื่นมองข้าม'];
+const PAIR_REL={
+ comp:'เขาเป็นคู่ธาตุของคุณ คิดคล้ายกันและเข้าใจกันไว เหมาะทำงานคู่กัน แต่ต้องแบ่งบทบาทให้ชัด ไม่อย่างนั้นจะชนกันเรื่องใครเป็นคนนำ',
+ res:'เขาเป็นธาตุก่อเกิดของคุณ เขามักเป็นฝ่ายส่งพลัง ความรู้ หรือโอกาสมาให้คุณ คล้ายพี่เลี้ยง',
+ out:'เขาเป็นธาตุถ่ายเทของคุณ คุณมักเป็นฝ่ายให้ สอน หรือดูแลเขา สร้างผลงานร่วมกันได้ดี แต่คุณจะเหนื่อยกว่า',
+ wealth:'เขาเป็นธาตุโชคลาภของคุณ คุณคุมจังหวะได้ และเขามักเป็นโอกาสหรือทรัพยากรของคุณ แต่ถ้ากดดันมากเขาจะอึดอัด',
+ power:'เขาเป็นธาตุอำนาจของคุณ เขามีอิทธิพลกับคุณและช่วยให้คุณมีวินัย แต่บางครั้งคุณจะรู้สึกถูกกดดัน'};
+const ROLES=['เพื่อนร่วมงาน','หัวหน้า','ลูกน้อง','หุ้นส่วน','ลูกค้า / คนที่จะไปคุย','คู่รัก / คนใกล้ชิด','ครอบครัว','อื่น ๆ'];
+const ROLE_TIP={
+ 'เพื่อนร่วมงาน':'แบ่งงานตามจุดแข็งของแต่ละคน ตกลงเรื่องเครดิตผลงานตั้งแต่ต้น',
+ 'หัวหน้า':'รายงานด้วยสไตล์ที่เขาชอบ เสนอทางเลือกพร้อมข้อสรุป และส่งงานก่อนกำหนดเล็กน้อย',
+ 'ลูกน้อง':'มอบงานที่ตรงกับธาตุตัวตนของเขา ชมในสิ่งที่เขาภูมิใจ และให้ฟีดแบ็กแบบที่เขารับได้',
+ 'หุ้นส่วน':'ทำข้อตกลงเรื่องเงิน บทบาท และทางออกเมื่อเห็นไม่ตรงกันไว้เป็นลายลักษณ์อักษร',
+ 'ลูกค้า / คนที่จะไปคุย':'เลือกวันนัดจากรายการด้านล่าง ใช้สีและสถานที่ที่แนะนำ และเปิดบทสนทนาตามสไตล์ของเขา',
+ 'คู่รัก / คนใกล้ชิด':'เข้าใจว่าเขาเติมพลังด้วยอะไร และหาจังหวะคุยเรื่องสำคัญในวันที่ไม่ชงกัน',
+ 'ครอบครัว':'ใช้จุดที่ธาตุเกื้อหนุนกันเป็นตัวเชื่อม และเลี่ยงคุยเรื่องหนักในวันที่ชงกัน',
+ 'อื่น ๆ':'ใช้วิธีคุยตามธาตุตัวตนของเขา และนัดในวันที่ดีต่อทั้งสองฝ่าย'};
+const STAR_ROLE={comp:'งานทีม การขาย การประสานเครือข่าย',res:'วางแผน วิจัย ฝึกอบรม เอกสาร',out:'ครีเอทีฟ คอนเทนต์ การนำเสนอ พัฒนาสินค้า',wealth:'การเงิน การขาย บริหารทรัพยากรและต้นทุน',power:'บริหารคน ควบคุมคุณภาพ ดูแลระบบและกฎ'};
+const GOD_GROUP={F:'comp',RW:'comp',DR:'res',IR:'res',EG:'out',HO:'out',IW:'wealth',DW:'wealth',DO:'power','7K':'power'};
+const PURPOSE=[
+ {k:'gen',n:'ทั่วไป'},
+ {k:'deal',n:'เจรจา / ปิดดีล',g:['IW','DW','EG','HO'],nob:.3},
+ {k:'sign',n:'เซ็นสัญญา / ยื่นเอกสาร',g:['DO','DR'],bad:['HO'],nob:.15},
+ {k:'open',n:'เปิดร้าน / เปิดตัว',g:['IW','DW','EG']},
+ {k:'meet',n:'สัมภาษณ์ / พบผู้ใหญ่',g:['DO','DR','IR'],nob:.35},
+ {k:'travel',n:'เดินทาง / ย้ายที่',horse:.2,clashX:1.5},
+ {k:'love',n:'นัดเดท / เรื่องความรัก',peach:.25,spouse:.15,harm:.25},
+ {k:'study',n:'เริ่มเรียน / สอบ',g:['DR','IR'],wen:.3}];
+
+const PATTERN={F:['月令比肩','ตัวตนแข็งจากฤดูเกิด พึ่งตัวเองเก่ง เหมาะสร้างสิ่งที่เป็นของตัวเอง ต้องหาช่องทางระบายพลังออกเป็นผลงานและรายได้'],
+ RW:['月劫格','ใจสู้และชอบแข่งขันตั้งแต่พื้นฐาน เก่งเมื่อมีเป้าหมายให้ไล่ล่า ต้องระวังเรื่องเงินกับหุ้นส่วน'],
+ DR:['正印格','ได้ผู้ใหญ่และความรู้หนุน เหมาะสายวิชาการ องค์กร และงานที่ต้องได้รับความไว้วางใจ'],
+ IR:['偏印格','ความคิดเฉพาะทาง ชอบศาสตร์ลึก เหมาะงานผู้เชี่ยวชาญ วิจัย และงานเทคนิค'],
+ EG:['食神格','สร้างสรรค์แบบนุ่มนวล มีรสนิยม เหมาะงานสร้างผลงาน อาหาร ศิลปะ และงานบริการ'],
+ HO:['伤官格','หัวไว กล้าคิดต่าง พูดเก่ง เหมาะงานนวัตกรรม การนำเสนอ และอาชีพอิสระ'],
+ IW:['偏财格','มองเห็นโอกาส ใจกว้าง เหมาะการค้า ดีล และธุรกิจที่ขยายเร็ว'],
+ DW:['正财格','ขยัน มีระบบ เก็บเงินเป็น เหมาะงานบริหารเงินและธุรกิจที่มั่นคง'],
+ DO:['正官格','มีระเบียบ น่าเชื่อถือ เหมาะองค์กร ราชการ และตำแหน่งบริหาร'],
+ '7K':['七杀格','เด็ดขาด กล้าเสี่ยง เหมาะงานที่มีแรงกดดันสูงและต้องนำคน']};
+const SEASON_STATE={'旺':'รุ่งเรือง เพราะตรงฤดูเกิด','相':'ได้แรงหนุนจากฤดูเกิด','休':'พักตัว ฤดูเกิดดึงพลังออกไป','囚':'ถูกกัก ต้องออกแรงข่มฤดู','死':'อ่อนที่สุด เพราะฤดูเกิดข่มดิถี'};
+const PT_N={xweak:'ดิถีอ่อนพิเศษ',weak:'ดิถีอ่อน',bal:'ดิถีสมดุล',strong:'ดิถีแข็ง',xstrong:'ดิถีแข็งพิเศษ'};
+
+// ---- interpretation layer ----
+const L=(()=>{
+const B=BZ;
+function relVal(de,map){ return [0,1,2,3,4].map(e=>map[B.rel(e,de)]); }
+function courseVals(a){ const neg=a.type==='bal'?-0.4:-0.6; return [0,1,2,3,4].map(e=>(e===a.favEl[0]||e===a.favEl[1])?1:(e===a.favEl[2]?0.25:neg)); }
+function proType(ps,rooted){ const s=ps.sup; if(s>=0.8) return 'xstrong'; if(s>=0.55) return 'strong'; if(s>0.45) return 'bal'; if(s<=0.2&&!rooted) return 'xweak'; return 'weak'; }
+function proVals(a,ps,pt){ const de=a.de;
+  if(pt==='strong') return relVal(de,{comp:-0.6,res:-0.6,out:1,wealth:1,power:0.6});
+  if(pt==='weak') return relVal(de,{comp:1,res:1,out:-0.6,wealth:-0.6,power:-0.8});
+  if(pt==='bal') return relVal(de,{comp:-0.2,res:-0.2,out:0.6,wealth:0.6,power:0.3});
+  if(pt==='xstrong') return relVal(de,{comp:1,res:1,out:0.2,wealth:-0.6,power:-0.9});
+  const o=[0,1,2,3,4].filter(e=>e!==de&&e!==(de+4)%5).sort((x,y)=>ps.pct[y]-ps.pct[x]); const v=[0,0,0,0,0]; v[de]=-0.9; v[(de+4)%5]=-0.8; v[o[0]]=1; v[o[1]]=0.7; v[o[2]]=0.3; return v; }
+const clamp=x=>Math.max(-1,Math.min(1,x));
+function calKey(inp){ return `bazi-cal:${inp.y}-${inp.m}-${inp.d}|${inp.gender||''}`; }
+function makePerson(inp,opt){ // opt: {ratings, noCal}
+  const r=B.compute(inp); const P=r.pillars; const a=B.analyze(P);
+  const ps=B.proStrength(P), pt=proType(ps,a.rooted), cl=B.climate(P), pat=B.pattern(P);
+  const cv=courseVals(a), pv=proVals(a,ps,pt);
+  const cw=cl.season==='mild'?0.7:1.5; const clv=[0,0,0,0,0]; if(cl.stems[0]!=null) clv[B.stemEl(cl.stems[0])]+=0.3*cw; if(cl.stems[1]!=null&&B.stemEl(cl.stems[1])!==B.stemEl(cl.stems[0])) clv[B.stemEl(cl.stems[1])]+=0.15*cw;
+  const prior=[0,1,2,3,4].map(e=>clamp(0.55*cv[e]+0.45*pv[e]+clv[e]));
+  const lk=inp.gender?B.luck(r,P,inp.gender):null;
+  const dist=B.elemDist(P);
+  const peachSet=new Set([B.PEACH[P.day.b%4],B.PEACH[P.year.b%4]]);
+  const horseSet=new Set([B.HORSE[P.day.b%4],B.HORSE[P.year.b%4]]);
+  const me={inp,r,P,a,lk,dist,peachSet,horseSet,ps,pt,cl,pat,cv,pv,clv,prior,birthMs:Date.UTC(inp.y,inp.m-1,inp.d,inp.h??12,inp.mi??0)-inp.tz*3600000};
+  setVals(me,prior);
+  const ratings=(opt&&opt.ratings)||null;
+  if(ratings&&!(opt&&opt.noCal)){ const n=Object.keys(ratings).length; if(n>=5){ const w=fitVals(me,ratings,null); setVals(me,w.map(clamp)); me.calibrated=n; } }
+  return me;
+}
+function setVals(me,vals){ me.vals=vals; me.val=e=>vals[e]; me.fav=[0,1,2,3,4].sort((x,y)=>vals[y]-vals[x]).slice(0,3); }
+function brDist(b){ const d=[0,0,0,0,0]; const hs=B.HIDDEN_FULL[b]; const w={1:[1],2:[0.7,0.3],3:[0.6,0.3,0.1]}[hs.length]; hs.forEach((s,i)=>d[B.stemEl(s)]+=w[i]); return d; }
+function yearFeat(me,cy){ const s=((cy-4)%10+10)%10,b=((cy-4)%12+12)%12; const f=[0,0,0,0,0]; f[B.stemEl(s)]+=0.5; brDist(b).forEach((v,i)=>f[i]+=0.5*v);
+  const lp=luckAtYear(me,cy); if(lp){ f[B.stemEl(lp.s)]+=0.12; brDist(lp.b).forEach((v,i)=>f[i]+=0.18*v); } return f; }
+function fitVals(me,ratings,skip){ const F=[],t=[]; for(const k in ratings){ if(+k===skip) continue; F.push(yearFeat(me,+k)); t.push(ratings[k]); } return B.ridge(F,t,me.prior,2); }
+function hit(t,x){ return t>0?x>=0.05:t<0?x<=-0.05:Math.abs(x)<0.35; }
+function accuracy(me,ratings){ const ks=Object.keys(ratings).map(Number); if(!ks.length) return null; let before=0,after=0;
+  const keep=me.vals; setVals(me,me.prior); ks.forEach(k=>{ if(hit(ratings[k],yearEval(me,k).total)) before++; });
+  if(ks.length>=5){ ks.forEach(k=>{ setVals(me,fitVals(me,ratings,k).map(clamp)); if(hit(ratings[k],yearEval(me,k).total)) after++; }); }
+  setVals(me,keep); return {n:ks.length,before,after:ks.length>=5?after:null}; }
+const POSK=['year','month','day','hour'];
+function evalPillar(me,s,b,kind){
+  const {a,P,val}=me; const es=B.stemEl(s), eb=B.BR_EL[b];
+  const ws=kind==='luck'?0.4:0.5;
+  const bd=brDist(b); const bv=bd.reduce((acc,x,i)=>acc+x*val(i),0);
+  let sc=ws*val(es)+(1-ws)*bv;
+  const notes=[]; const taisui=[];
+  const palW={day:.35,month:.3,year:.3,hour:.15};
+  const mult=kind==='luck'?0.7:1;
+  for(const k of POSK){ if(!P[k]) continue; const pb=P[k].b, rr=B.brRel(b,pb); const favB=val(B.BR_EL[pb])>0;
+    if(rr.includes('clash')){ sc-=palW[k]*(favB?1:0.5)*mult; notes.push({t:'clash',k,pb,mild:!favB}); }
+    if(rr.includes('punish')&&!(k==='year'&&b===pb)){ sc-=0.07*mult; notes.push({t:'punish',k,pb}); }
+    if(rr.includes('harm')){ sc-=0.05*mult; notes.push({t:'harm',k,pb}); }
+    if(k==='day'&&rr.includes('harmony')){ sc+=0.15; notes.push({t:'harmony',k,pb}); }
+    if(k==='day'&&rr.includes('trine')){ sc+=0.08; notes.push({t:'trine',k,pb}); }
+  }
+  if(kind==='year'){ const de=a.de;
+    if((es+2)%5===de&&(b+6)%12===P.day.b){ sc-=0.2; notes.push({t:'tkdc'}); }
+    if(s===P.day.s&&b===P.day.b){ sc-=0.08; notes.push({t:'fuyin'}); }
+    const bs=POSK.filter(k=>P[k]).map(k=>P[k].b); [[8,0,4,4],[2,6,10,1],[5,9,1,3],[11,3,7,0]].forEach(g=>{ const m=g.slice(0,3); if(m.includes(b)&&m.filter(x=>x!==b).every(x=>bs.includes(x))){ sc+=0.25*val(g[3]); notes.push({t:'trineform',el:g[3]}); } });
+    const yb=P.year.b, rr=B.brRel(b,yb);
+    if(b===yb){ sc-=0.1; taisui.push('值'); }
+    if(rr.includes('clash')) taisui.push('冲'); if(rr.includes('punish')&&b!==yb) taisui.push('刑');
+    if(rr.includes('harm')) taisui.push('害'); if(rr.includes('break')) taisui.push('破'); }
+  if(NOBLE[a.dm].includes(b)){ sc+=0.25; notes.push({t:'noble'}); }
+  if(me.peachSet.has(b)) notes.push({t:'peach'});
+  if(me.horseSet.has(b)) notes.push({t:'horse'});
+  if(B.WENCHANG[a.dm]===b) notes.push({t:'wen'});
+  if(B.stCombo(s,a.dm)){ sc+=0.05; notes.push({t:'combo'}); }
+  if(B.stClash(s,a.dm)){ sc-=0.05; notes.push({t:'stclash'}); }
+  return {s,b,sc,gS:B.tenGod(s,a.dm),gB:B.tenGod(B.BR_MAIN[b],a.dm),notes,taisui,es,eb};
+}
+function label(sc,ctx){
+  if(ctx==='day'){ if(sc>=0.5) return {n:'ดีมาก',c:'g2'}; if(sc>=0.15) return {n:'ดี',c:'g1'}; if(sc>=-0.25) return {n:'กลาง ๆ',c:'n0'}; if(sc>=-0.6) return {n:'ระวัง',c:'b1'}; return {n:'ควรเลี่ยง',c:'b2'}; }
+  if(sc>=0.5) return {n:'ดีมาก',c:'g2'}; if(sc>=0.15) return {n:'ดี',c:'g1'};
+  if(sc>=-0.25) return {n:'กลาง ๆ',c:'n0'}; if(sc>=-0.6) return {n:'ต้องระวัง',c:'b1'}; return {n:'ควรตั้งรับ',c:'b2'};
+}
+function isSpouseGod(me,g){ return me.inp.gender==='m'?(g==='DW'||g==='IW'):me.inp.gender==='f'?(g==='DO'||g==='7K'):false; }
+function currentLuck(me,ms){ if(!me.lk) return null; const age=(ms-me.birthMs)/31556952000; return me.lk.list.find(p=>age>=p.from&&age<p.to)||null; }
+function luckAtYear(me,cy){ if(!me.lk) return null; const age=cy-me.inp.y+0.3; return me.lk.list.find(p=>age>=p.from&&age<p.to)||null; }
+function yearEval(me,cy){ const s=((cy-4)%10+10)%10, b=((cy-4)%12+12)%12; const e=evalPillar(me,s,b,'year');
+  const lp=luckAtYear(me,cy); if(lp){ const le=evalPillar(me,lp.s,lp.b,'luck'); e.luck=le; e.total=e.sc+0.3*le.sc; if((b+6)%12===lp.b){ e.total-=0.15; e.notes.push({t:'luckclash',lb:lp.b}); } if(B.stCombo(s,lp.s)) e.notes.push({t:'luckcombo'}); } else e.total=e.sc;
+  e.cy=cy; return e; }
+function monthEvals(me,cy,yE){ const st=B.monthStarts(cy); const ys=((cy-4)%10+10)%10; const out=[];
+  for(let k=0;k<12;k++){ const s=(((ys%5)*2+2)+k)%10, b=(k+2)%12; const e=evalPillar(me,s,b,'month'); e.total=e.sc+0.3*yE.total; e.from=st[k]; e.to=st[k+1]; out.push(e);} return out; }
+const dayN=(y,m,d)=>(B._jdn(y,m,d)+49)%60;
+function evalDay(me,y,m,d,pur,other,curYB){
+  const n=dayN(y,m,d), s=n%10, b=n%12; const e=evalPillar(me,s,b,'day');
+  const P=PURPOSE.find(p=>p.k===pur)||PURPOSE[0]; let sc=e.sc; const why=[];
+  if(P.clashX){ e.notes.filter(x=>x.t==='clash').forEach(()=>sc-=0.15); }
+  if(P.g){ if(P.g.includes(e.gS)){sc+=0.2;why.push(`ดาว${STAR[e.gS].th.replace('นักธุรกิจสาย','สาย')}เข้าวัน`);} else if(P.g.includes(e.gB)){sc+=0.1;} }
+  if(P.bad&&P.bad.includes(e.gS)){sc-=0.25;why.push('ดาวแหวกขนบเข้า ไม่เหมาะงานเอกสาร');}
+  if(P.nob&&e.notes.some(x=>x.t==='noble')){sc+=P.nob;}
+  if(P.horse&&e.notes.some(x=>x.t==='horse')){sc+=P.horse;why.push('วันดาวม้า (驿马) เหมาะเคลื่อนที่');}
+  if(P.peach&&e.notes.some(x=>x.t==='peach')){sc+=P.peach;why.push('วันดาวเสน่ห์ (桃花)');}
+  if(P.spouse&&isSpouseGod(me,e.gS)){sc+=P.spouse;why.push('ดาวคู่ครองเข้าวัน');}
+  if(P.harm&&e.notes.some(x=>x.t==='harmony')){sc+=P.harm;}
+  if(P.wen&&e.notes.some(x=>x.t==='wen')){sc+=P.wen;why.push('วันดาวปัญญา (文昌)');}
+  let broken=false; if(curYB!=null&&(b+6)%12===curYB){ sc-=0.3; broken=true; }
+  let oth=null; if(other){ const oe=evalPillar(other,s,b,'day'); const oc=oe.notes.filter(x=>x.t==='clash'&&(x.k==='day'||x.k==='year'));
+    if(oc.length) sc-=0.35; if(NOBLE[other.a.dm].includes(b)) sc+=0.15; if(B.HARM6[other.P.day.b]===b) sc+=0.1; oth={clash:oc.length>0,sc:oe.sc}; }
+  return {...e,y,m,d,n,sc,why,broken,oth};
+}
+function bestHours(me,ds,db){ const out=[]; for(let hb=0;hb<12;hb++){ const s=((ds%5)*2+hb)%10; const {a,P,val}=me;
+  let sc=0.5*val(B.stemEl(s))+0.5*val(B.BR_EL[hb]); if((hb+6)%12===P.day.b) sc-=0.5; if((hb+6)%12===db) sc-=0.3; if(NOBLE[a.dm].includes(hb)) sc+=0.2;
+  out.push({hb,s,sc}); } return out.sort((x,y)=>y.sc-x.sc); }
+const hourRange=hb=>{const st=(hb*2+23)%24;return `${String(st).padStart(2,'0')}:00–${String((st+2)%24).padStart(2,'0')}:00`;};
+function noteText(me,x){ const PK={year:'หลักปี',month:'หลักเดือน',day:'หลักวัน',hour:'หลักยาม'}; const Bn=b=>`${B.BR_TH[b]}`;
+  switch(x.t){
+   case 'clash': return `ชงกับ${Bn(x.pb)}ใน${PK[x.k]}: ${PALACE_CLASH[x.k]}${x.mild?' (ช่องที่ถูกชงไม่ใช่ธาตุให้คุณ ผลกระทบเบาลง บางครั้งเป็นการเปลี่ยนแปลงที่ดี)':''}`;
+   case 'punish': return `เกิดการเฮ้ง (刑) กับ${PK[x.k]}: มีเรื่องจุกจิก ความผิดพลาดจากความประมาท หรือเรื่องเอกสาร`;
+   case 'harm': return `เกิดการไห่ (害) กับ${PK[x.k]}: ระวังความเข้าใจผิดกับคนใกล้ตัว`;
+   case 'harmony': return 'ฮะกับหลักวัน: มีแรงหนุนเรื่องความสัมพันธ์ เจอคนที่เข้ากันได้ดี';
+   case 'trine': return 'ซาฮะกับหลักวัน: คนรอบตัวให้ความร่วมมือ งานไหลลื่น';
+   case 'noble': return 'นักษัตรผู้อุปถัมภ์เข้า: มีคนช่วยในจังหวะสำคัญ';
+   case 'peach': return 'ดาวเสน่ห์ (桃花) เข้า: คนเข้าหาง่าย มีเรื่องความรักหรือความนิยม';
+   case 'horse': return 'ดาวม้า (驿马) เข้า: มีการเดินทาง ย้ายที่ หรือเปลี่ยนแปลงบ่อย';
+   case 'wen': return 'ดาวปัญญา (文昌) เข้า: ดีต่อการเรียน สอบ และงานเขียน';
+   case 'combo': return 'ราศีบนฮะกับดิถี: มีเรื่องหรือคนที่ดึงดูดเข้ามาหา';
+   case 'tkdc': return 'ราศีบนข่มดิถีและราศีล่างชงหลักวัน (天克地冲): เป็นปีที่มีการเปลี่ยนแปลงใหญ่เรื่องตัวเอง งาน หรือบ้าน ควรวางแผนสำรองไว้ก่อน';
+   case 'fuyin': return 'ปีนี้ซ้ำกับหลักวันของคุณ (伏吟): เรื่องเดิมวนกลับมาให้จัดการ อารมณ์อาจหนักกว่าปกติ';
+   case 'trineform': return `ปีนี้ประกอบซาฮะครบชุดกับดวงคุณ เกิดพลังธาตุ${BZ.EL[x.el]}แรงขึ้น${me.val(x.el)>0?' ซึ่งเป็นธาตุให้คุณ ช่วยหนุนมาก':' ซึ่งไม่ใช่ธาตุให้คุณ ต้องถ่วงสมดุล'}`;
+   case 'luckclash': return `นักษัตรปีนี้ชงกับวัยจรที่คุณกำลังเดิน (${BZ.BR_TH[x.lb]}) เป็นช่วงที่ทิศทางชีวิตขยับ ควรตัดสินใจเรื่องใหญ่อย่างรอบคอบ`;
+   case 'luckcombo': return 'ราศีบนของปีฮะกับวัยจร: มีโอกาสหรือคนใหม่เข้ามาเชื่อมกับเส้นทางที่เดินอยู่';
+   case 'stclash': return 'ราศีบนชงกับดิถี: ความคิดขัดแย้งกับตัวเองหรือคนรอบข้าง ตัดสินใจช้าลงหน่อย';
+  } return ''; }
+const TAISUI_N={'值':'ปีนักษัตรตัวเอง','冲':'ปีชง','刑':'ปีเฮ้ง','害':'ปีไห่','破':'ปีผั่ว'};
+function favKit(me,idx){ const e=me.fav[idx]; const I=ELINFO[e]; return {e,txt:`ธาตุ${BZ.EL[e]}: ใช้สี${I.color} หันโต๊ะหรือที่นั่งไปทาง${DIR[e]} ทำกิจกรรมแนว${I.act} ไปสถานที่อย่าง${I.place}`}; }
+function remedies(me,e){ const out=[]; const {a,P,val}=me;
+  if(e.taisui.length) out.push(`${e.taisui.map(t=>TAISUI_N[t]).join(' / ')}ของคุณ ถ้านับถือ ให้ไหว้ขอพรไท่ส่วยเอี๊ยะที่ศาลเจ้าจีนหรืออารามเต๋าช่วงต้นปีจีน`);
+  const cl=e.notes.filter(x=>x.t==='clash'); const seen=new Set();
+  cl.forEach(x=>{ if(seen.has(x.pb))return; seen.add(x.pb); const ally=HARMONY[x.pb]; out.push(`ใช้สัญลักษณ์นักษัตร${BZ.BR_TH[ally]} (${BZ.BR_ANIMAL[ally]}) ซึ่งเป็นคู่ฮะของ${BZ.BR_TH[x.pb]}ในดวงคุณ เป็นของติดตัวหรือวางบนโต๊ะทำงาน`); out.push(PALACE_FIX[x.k]); });
+  if(val(e.es)<0||val(e.eb)<0){ out.push(`ปีนี้มีธาตุที่ไม่ใช่ธาตุให้คุณเด่น ให้เติม${favKit(me,0).txt}`); out.push(`หรือเติม${favKit(me,1).txt}`); }
+  [e.gS,e.gB].forEach((g,i)=>{ const el=i===0?e.es:e.eb; if(val(el)<=0&&!out.includes(GOD_YEAR[g].fix)) out.push(GOD_YEAR[g].fix); });
+  if(e.notes.some(x=>x.t==='horse')&&cl.length) out.push('ช่วงที่ดาวม้ามาพร้อมการชง ให้ระวังการเดินทางและการขับขี่เป็นพิเศษ');
+  if(!out.length) out.push('ปีนี้ไม่ต้องแก้อะไรเป็นพิเศษ ใช้ธาตุให้คุณตามปกติ แล้วเร่งเรื่องที่ตั้งใจไว้');
+  return out; }
+function groups(me){ const g={comp:0,res:0,out:0,wealth:0,power:0}; me.a.stars.forEach(([k,w])=>g[GOD_GROUP[k]]+=w); const t=Object.values(g).reduce((x,y)=>x+y,0)||1; const sh={}; for(const k in g) sh[k]=g[k]/t; return {g,sh}; }
+function symbolic(me){ const {P,a}=me; const res=[]; const ks=POSK.filter(k=>P[k]); const PK={year:'ปี',month:'เดือน',day:'วัน',hour:'ยาม'};
+  const add=(zh,n,br,d)=>{ const where=ks.filter(k=>br.includes(P[k].b)).map(k=>PK[k]); res.push({zh,n,br,where,d}); };
+  add('贵人','ผู้อุปถัมภ์',NOBLE[a.dm],'มีคนช่วยในจังหวะสำคัญ ผู้ใหญ่เมตตา');
+  add('文昌','ดาวปัญญา',[B.WENCHANG[a.dm]],'หัวไว เรียนเก่ง เขียนและสื่อสารได้ดี');
+  add('桃花','ดาวเสน่ห์',[...me.peachSet],'มีเสน่ห์ คนเข้าหาง่าย เหมาะงานที่ต้องพบคน');
+  add('驿马','ดาวม้า',[...me.horseSet],'ชอบเคลื่อนที่ เดินทางบ่อย งานต่างถิ่นหรือต่างประเทศเด่น');
+  add('华盖','ดาวฉัตร',[B.CANOPY[P.day.b%4],B.CANOPY[P.year.b%4]],'สนใจศาสตร์ลึก ศิลปะ หรือเรื่องจิตวิญญาณ ชอบเวลาส่วนตัว');
+  add('将星','ดาวแม่ทัพ',[B.GENERAL[P.day.b%4],B.GENERAL[P.year.b%4]],'มีภาวะผู้นำ คนยอมรับให้เป็นคนนำ');
+  if(B.BLADE[a.dm]!=null) add('羊刃','ดาวดาบ',[B.BLADE[a.dm]],'เด็ดขาด ใจสู้ แข่งขันเก่ง แต่ต้องคุมอารมณ์');
+  add('空亡','ช่องว่าง (空亡)',B.voidOf(P.day.s,P.day.b),'หลักที่ตกช่องว่าง เรื่องนั้นมักรู้สึกว่าไม่เต็ม ต้องลงแรงมากกว่าปกติ');
+  return res; }
+function interactions(P){ const ks=POSK.filter(k=>P[k]); const PK={year:'ปี',month:'เดือน',day:'วัน',hour:'ยาม'}; const out=[];
+  const NM={clash:['冲','ชง','ด้านชีวิตของสองหลักนี้มีแรงเสียดทาน เปลี่ยนแปลงบ่อย'],harmony:['合','ฮะ','สองหลักนี้เกื้อหนุนกัน'],trine:['三合','ซาฮะครึ่งชุด','ทำงานร่วมกันได้ดี'],harm:['害','ไห่','ระวังความเข้าใจผิดระหว่างด้านชีวิตสองด้านนี้'],punish:['刑','เฮ้ง','มีเรื่องจุกจิก ต้องรอบคอบ'],break:['破','ผั่ว','แผนอาจสะดุดบางช่วง']};
+  for(let i=0;i<ks.length;i++)for(let j=i+1;j<ks.length;j++){ const x=P[ks[i]].b,y=P[ks[j]].b; B.brRel(x,y).forEach(t=>out.push({zh:NM[t][0],t:`${B.BR_TH[x]} (${PK[ks[i]]}) ${NM[t][1]} ${B.BR_TH[y]} (${PK[ks[j]]})`,d:NM[t][2]})); }
+  const bs=ks.map(k=>P[k].b); [[8,0,4,'น้ำ'],[2,6,10,'ไฟ'],[5,9,1,'ทอง'],[11,3,7,'ไม้']].forEach(g=>{ if(g.slice(0,3).every(b=>bs.includes(b))) out.push({zh:'三合',t:`ซาฮะครบชุด เกิดพลังธาตุ${g[3]}`,d:'พลังธาตุนี้แรงกว่าที่เห็นในคะแนน'}); });
+  [[2,3,4,'ไม้'],[5,6,7,'ไฟ'],[8,9,10,'ทอง'],[11,0,1,'น้ำ']].forEach(g=>{ if(g.slice(0,3).every(b=>bs.includes(b))) out.push({zh:'三会',t:`ซาหวยครบชุด เกิดพลังธาตุ${g[3]}`,d:'พลังธาตุนี้แรงมากในดวง'}); });
+  const ss=ks.map(k=>[k,P[k].s]); for(let i=0;i<ss.length;i++)for(let j=i+1;j<ss.length;j++){ const [ka,a]=ss[i],[kb,b]=ss[j];
+    if(B.stCombo(a,b)) out.push({zh:'合',t:`${B.STEM_TH[a]} (${PK[ka]}) ฮะ ${B.STEM_TH[b]} (${PK[kb]}) ราศีบน`,d:'ความคิดและการแสดงออกของสองด้านนี้ไปทางเดียวกัน'});
+    if(B.stClash(a,b)) out.push({zh:'冲',t:`${B.STEM_TH[a]} (${PK[ka]}) ชง ${B.STEM_TH[b]} (${PK[kb]}) ราศีบน`,d:'ความคิดสองด้านขัดกันบ้าง ต้องหาจุดกลาง'}); }
+  return out; }
+function pair(me,th){ const rel=B.rel(th.a.de,me.a.de), relBack=B.rel(me.a.de,th.a.de); let sc=55; const pts=[];
+  const favShare=(p,dist)=>dist[p.fav[0]]+dist[p.fav[1]];
+  const supMe=favShare(me,th.dist), supTh=favShare(th,me.dist);
+  sc+=(supMe-0.4)*30+(supTh-0.4)*20;
+  sc+={res:6,wealth:3,comp:3,out:1,power:(me.a.type==='strong'||me.a.type==='xstrong')?4:-4}[rel];
+  if(B.stCombo(me.a.dm,th.a.dm)){sc+=12;pts.push(['+','ดิถีฮะกัน (ถูกชะตาสุดขั้ว) ดึงดูดและเติมเต็มกัน']);}
+  if(me.a.dm===th.a.dm){sc+=5;pts.push(['+','ดิถีเดียวกัน (เออออห่อหมก) คิดคล้าย คุยง่าย']);}
+  if(B.stClash(me.a.dm,th.a.dm)){sc-=6;pts.push(['−','ดิถีชงกัน มุมคิดต่างกันชัด ต้องใจเย็นเวลาคุย']);}
+  const chk=(x,y,lab,w)=>{ const r=B.brRel(x,y);
+    if(r.includes('harmony')){sc+=10*w;pts.push(['+',`${lab}ฮะกัน เข้ากันง่าย`]);}
+    else if(r.includes('trine')){sc+=6*w;pts.push(['+',`${lab}อยู่กลุ่มซาฮะเดียวกัน ทำงานร่วมกันลื่นไหล`]);}
+    if(r.includes('clash')){sc-=10*w;pts.push(['−',`${lab}ชงกัน มีแรงเสียดทาน ต้องตกลงกติกาให้ชัด`]);}
+    if(r.includes('punish')&&x!==y){sc-=5*w;pts.push(['−',`${lab}เฮ้งกัน ระวังเรื่องจุกจิกและคำพูดกระทบใจ`]);}
+    if(r.includes('harm')){sc-=4*w;pts.push(['−',`${lab}ไห่กัน ระวังความเข้าใจผิด`]);} };
+  chk(me.P.day.b,th.P.day.b,'นักษัตรหลักวัน (ใจและชีวิตส่วนตัว) ',1);
+  chk(me.P.year.b,th.P.year.b,'นักษัตรปีเกิด (ภาพลักษณ์และสังคม) ',0.8);
+  if(NOBLE[me.a.dm].includes(th.P.year.b)||NOBLE[me.a.dm].includes(th.P.day.b)){sc+=8;pts.push(['+','เขาเป็นนักษัตรผู้อุปถัมภ์ของคุณ']);}
+  if(NOBLE[th.a.dm].includes(me.P.year.b)||NOBLE[th.a.dm].includes(me.P.day.b)){sc+=5;pts.push(['+','คุณเป็นนักษัตรผู้อุปถัมภ์ของเขา']);}
+  sc=Math.max(5,Math.min(97,Math.round(sc)));
+  const common=me.fav.slice(0,2).filter(e=>th.fav.slice(0,2).includes(e));
+  return {rel,relBack,sc,pts,supMe,supTh,common}; }
+return {calKey,accuracy,fitVals,setVals,proType,makePerson,evalPillar,label,yearEval,monthEvals,evalDay,bestHours,hourRange,noteText,remedies,groups,symbolic,interactions,pair,isSpouseGod,currentLuck,luckAtYear,dayN,TAISUI_N};
+})();
+
+(function(){
+const $=s=>document.querySelector(s);
+const B=BZ, ELN=B.EL;
+const elName=s=>`${ELN[B.stemEl(s)]}${B.yang(s)?'หยาง':'หยิน'}`;
+const cssEl=['var(--wood)','var(--fire)','var(--earth)','var(--metal)','var(--water)'];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>Number.isInteger(n)?n:n.toFixed(1);
+const TH_M=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+const TH_MF=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+const pill=(p)=>`<span class="pz" style="--c1:${cssEl[B.stemEl(p.s)]};--c2:${cssEl[B.BR_EL[p.b]]}"><i>${B.STEM_ZH[p.s]}</i><i>${B.BR_ZH[p.b]}</i></span>`;
+const lab=(sc,ctx)=>{const x=L.label(sc,ctx);return `<span class="lb ${x.c}">${x.n}</span>`;};
+const starShort=g=>STAR[g].th.replace('นักธุรกิจ','');
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
+
+// ---------- form ----------
+const pl=$('#pl');
+PLACES.forEach((p,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${p[0]} (UTC+${p[1]})`;pl.appendChild(o);});
+{const o=document.createElement('option');o.value='c';o.textContent='ที่อื่น (กำหนดเขตเวลาและลองจิจูดเอง)';pl.appendChild(o);}
+const syncPl=()=>$('#customPl').classList.toggle('hidden',pl.value!=='c');pl.addEventListener('change',syncPl);
+(function load(){const v=store.get('bazi-form',null);if(!v)return;$('#nm').value=v.nm||'';$('#dt').value=v.dt||'';$('#tm').value=v.tm||'';$('#notime').checked=!!v.nt;pl.value=v.pl??0;$('#solar').checked=v.solar!==false;$('#dst').checked=!!v.dst;$('#zi').value=v.zi||'23';if(v.ctz!=null)$('#ctz').value=v.ctz;if(v.clon!=null)$('#clon').value=v.clon;if(v.g){const r=document.querySelector(`input[name=g][value=${v.g}]`);if(r)r.checked=true;}syncPl();})();
+const syncTime=()=>{$('#tm').disabled=$('#notime').checked;};
+const showBE=()=>{const v=$('#dt').value;$('#be').textContent=v?`ตรงกับ พ.ศ. ${+v.slice(0,4)+543}`:'ถ้ารู้เป็น พ.ศ. ให้ลบ 543 (เช่น 2538 = 1995)';};
+syncTime();showBE();
+$('#notime').addEventListener('change',syncTime);$('#dt').addEventListener('input',showBE);
+function tzFor(name,base,y,m,d){const t=y*10000+m*100+d;
+  if(/กรุงเทพ|เชียง|พิษณุโลก|นครสวรรค์|ขอนแก่น|อุดร|นครราชสีมา|อุบล|ชลบุรี|ระยอง|หัวหิน|สุราษฎร์|ภูเก็ต|หาดใหญ่/.test(name)&&t<19200401) return 6.7;
+  if(/สิงคโปร์|กัวลาลัมเปอร์/.test(name)){ if(t<19330101) return 7.33; if(t<19420216) return 7.5; if(t<19450912) return 9; if(t<19820101) return 7.5; }
+  if(/โฮจิมินห์/.test(name)&&t>=19600101&&t<19750613) return 8;
+  if(/โซล/.test(name)&&t>=19540321&&t<19610810) return 8.5;
+  const CN={1986:[504,914],1987:[412,913],1988:[417,911],1989:[416,917],1990:[415,916],1991:[414,915]};
+  if(/ปักกิ่ง|เซี่ยงไฮ้/.test(name)&&CN[y]){const md=m*100+d;if(md>=CN[y][0]&&md<CN[y][1]) return base+1;}
+  const KR={1987:[510,1011],1988:[508,1009]}; if(/โซล/.test(name)&&KR[y]){const md=m*100+d;if(md>=KR[y][0]&&md<KR[y][1]) return base+1;}
+  return base;}
+function readInput(dt,tm,nt,plIdx,solar,g,extra){const [y,m,d]=dt.split('-').map(Number);let h=null,mi=null;if(!nt&&tm){[h,mi]=tm.split(':').map(Number);}
+  extra=extra||{};let tz,lon,name;if(plIdx==='c'){tz=+extra.ctz||7;lon=+extra.clon||100.5;name='กำหนดเอง';}else{const p=PLACES[+plIdx||0];name=p[0];lon=p[2];tz=tzFor(name,p[1],y,m,d);}
+  if(extra.dst) tz+=1; return {y,m,d,h,mi,tz,lon,solar,gender:g||null,zi:extra.zi||'23',placeName:name};}
+let ME=null, V=null, TAB='base';
+function meInput(over){const inp=readInput(V.dt,V.tm,V.nt,V.pl,V.solar,V.g,{dst:V.dst,zi:V.zi,ctz:V.ctz,clon:V.clon});return Object.assign(inp,over||{});}
+function ratingsKey(){return L.calKey(meInput());}
+function buildMe(){const inp=meInput();ME=L.makePerson(inp,{ratings:store.get(ratingsKey(),{})});ME.v=V;}
+$('#f').addEventListener('submit',e=>{
+  e.preventDefault();const err=$('#err');err.style.display='none';
+  const dt=$('#dt').value,tm=$('#tm').value,nt=$('#notime').checked,g=(document.querySelector('input[name=g]:checked')||{}).value;
+  const fail=(t,el)=>{err.textContent=t;err.style.display='block';if(el)el.focus();};
+  if(!dt) return fail('ใส่วันเกิดก่อน',$('#dt'));
+  if(!nt&&!tm) return fail('ใส่เวลาเกิด หรือติ๊ก “ไม่ทราบเวลาเกิด”',$('#tm'));
+  if(!g) return fail('เลือกเพศ ใช้คำนวณวัยจร 10 ปีและดาวคู่ครอง');
+  const y=+dt.slice(0,4);if(y<1900||y>2100) return fail('รองรับปีเกิด ค.ศ. 1900–2100');
+  V={nm:$('#nm').value.trim(),dt,tm,nt,pl:pl.value==='c'?'c':(+pl.value||0),solar:$('#solar').checked,g,dst:$('#dst').checked,zi:$('#zi').value,ctz:$('#ctz').value,clon:$('#clon').value};store.set('bazi-form',V);
+  buildMe();
+  TAB='base';CAL=null;OPEN=null;show();
+  $('#formView').classList.add('hidden');$('#resView').classList.remove('hidden');window.scrollTo(0,0);
+});
+
+// ---------- shell ----------
+const TABS=[['base','พื้นดวง'],['deep','เจาะลึก'],['luck','จังหวะดวง'],['days','วันดี'],['people','คนรอบตัว']];
+function show(){
+  const rv=$('#resView');
+  const name=V.nm?`ดวงของ ${esc(V.nm)}`:'ดวงของคุณ';
+  let h=`<div class="topbar"><div class="inner"><nav class="tabs" role="tablist">${TABS.map(([k,n])=>`<button role="tab" aria-selected="${k===TAB}" data-t="${k}">${n}</button>`).join('')}</nav></div></div>`;
+  h+=`<header class="who"><div class="whorow"><h1>${name}</h1><button class="back" id="back">แก้ข้อมูล</button></div><div class="meta">คนธาตุ${elName(ME.a.dm)} · ${TYPE[ME.a.type].n} · ${ME.v.g==='m'?'ชาย':'หญิง'}</div></header>`;
+  h+=`<div id="tabBody">${({base:renderBase,deep:renderDeep,luck:renderLuck,days:renderDays,people:renderPeople})[TAB]()}</div>`;
+  h+=`<p class="note">คำนวณตามหลักในเอกสาร “SELF is the new WEALTH” (อ. อิ๋ม วรินท์พรรณ ตันติวัฒนะ) ต่อยอดด้วยหลักปาจื้อมาตรฐาน ได้แก่ วัยจร ปีจร เดือนจร ชง ฮะ เฮ้ง ไห่ และดาวพิเศษ ผลเป็นแนวโน้มเพื่อใช้วางแผน ไม่ใช่คำทำนายตายตัว เรื่องสุขภาพ การเงิน และกฎหมาย ควรปรึกษาผู้เชี่ยวชาญด้านนั้นประกอบ</p>`;
+  rv.innerHTML=h;
+  $('#back').onclick=()=>{rv.classList.add('hidden');$('#formView').classList.remove('hidden');window.scrollTo(0,0);};
+  rv.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;show();window.scrollTo(0,0);});
+  bind();
+  document.title=`${V.nm||'ดวงของคุณ'} · คนธาตุ${elName(ME.a.dm)}`;
+}
+function bind(){ if(TAB==='days') bindDays(); if(TAB==='people') bindPeople(); if(TAB==='luck') bindLuck(); }
+
+// ---------- chart tile ----------
+function tile(me,k,pos){
+  const p=me.P[k], a=me.a;
+  if(!p) return `<div class="tile none"><div class="nm">ไม่ทราบ<br>เวลาเกิด</div></div>`;
+  const cell=a.cells.find(c=>c.k===k&&c.pos===pos);
+  if(pos==='s'){const e=B.stemEl(p.s);
+    return `<div class="tile${k==='day'?' dm':''}" style="background:${cssEl[e]}">${cell.tg?`<span class="tg">${cell.tg}</span>`:''}<div class="zh">${B.STEM_ZH[p.s]}</div><div class="nm">${B.STEM_EN[p.s]}</div><div class="el">${elName(p.s)}</div><div class="badge${cell.got?'':' zero'}">${k==='day'?'ดิถี':`${cell.got}/${cell.w}`}</div></div>`;}
+  const e=B.BR_EL[p.b],hid=B.BR_HIDDEN[p.b];
+  return `<div class="tile" style="background:${cssEl[e]}">${hid!=null?`<i class="hstrip" style="background:${cssEl[hid]}"></i>`:''}<span class="tg">${cell.tg}</span><div class="zh">${B.BR_ZH[p.b]}</div><div class="nm">${B.BR_TH[p.b]} (${B.BR_ANIMAL[p.b]})</div><div class="el">${ELN[e]}${hid!=null?` · ซ่อน${ELN[hid]} 50%`:''}</div><div class="badge${cell.got?'':' zero'}">${fmt(cell.got)}/${cell.w}</div></div>`;
+}
+function chartHTML(me){const order=['hour','day','month','year'];
+  return `<div class="chart reveal"><div class="cols">${order.map(k=>`<div class="colhead"><b>${POS[k].n}</b><span>${POS[k].m}</span></div>`).join('')}</div>
+  <div class="rowlab">ราศีบน · พลังการแสดงออกภายนอก</div><div class="cols">${order.map(k=>tile(me,k,'s')).join('')}</div>
+  <div class="rowlab">ราศีล่าง · พลังความคิดลึก ๆ ภายในใจ</div><div class="cols">${order.map(k=>tile(me,k,'b')).join('')}</div></div>`;}
+
+// ---------- TAB: base (course) ----------
+function renderBase(){
+  const me=ME,r=me.r,a=me.a,P=me.P,dm=a.dm,de=a.de,prof=PROFILE[dm],T=TYPE[a.type],known=!!P.hour,v=me.v,place=[me.inp.placeName];
+  const [y,m,d]=v.dt.split('-').map(Number);
+  let h=`<div class="meta" style="color:var(--muted);font-size:14px">เกิด ${d} ${TH_M[m-1]} ${y} (พ.ศ. ${y+543})${known?` เวลา ${v.tm} น.`:' · ไม่ทราบเวลา'} · ${esc(place[0])}${known&&v.solar?`<br>เวลาสุริยะจริง ${r.solarTime} น. (ปรับ ${r.corr>=0?'+':''}${Math.round(r.corr)} นาที)`:''}</div>`;
+  if(r.warn.includes('term')) h+=`<div class="warn">วันเกิดอยู่ใกล้รอยต่อสารทจีน หลักเดือนหรือหลักปีอาจคลาดได้ ควรตรวจกับ chinesemetasoft.com อีกครั้ง</div>`;
+  if(r.warn.includes('hour')) h+=`<div class="warn">เวลาเกิดอยู่ใกล้รอยต่อยามจีน ถ้าเวลาคลาดไปไม่กี่นาที หลักยามอาจเปลี่ยน</div>`;
+  if(!known) h+=`<div class="warn">ไม่มีหลักยาม คะแนนเต็มเหลือ 9 คะแนน แอปเทียบสัดส่วนกลับเป็น 11 คะแนนให้ ผลอาจเปลี่ยนเมื่อรู้เวลาเกิด</div>`;
+  h+=chartHTML(me)+`<p class="small">ตัวเลขในแต่ละช่อง = คะแนนคู่ธาตุ + ธาตุก่อเกิดที่ได้ / คะแนนเต็มของช่อง ตัวย่อมุมขวาบนคือดาวเทพ แถบสีด้านล่างช่องธาตุดินคือธาตุซ่อน</p>`;
+  h+=`<section><h2>ธาตุตัวตน (ดิถี)</h2><p class="lede">ช่องราศีบนของหลักวัน คือธาตุประจำตัว บอกจุดแข็งพื้นฐานของคุณ</p>
+  <div class="box"><div class="selfhead"><div class="bigzh" style="background:${cssEl[de]}">${B.STEM_ZH[dm]}</div><div><h3>คนธาตุ${elName(dm)}</h3><p>${prof.t} · เปรียบดั่ง${prof.img}</p></div></div>
+  <ul class="traits">${prof.tr.map(t=>`<li>${t}</li>`).join('')}</ul><p class="famous">คนดังธาตุเดียวกัน: <b>${prof.f.join(', ')}</b></p></div></section>`;
+  const rels=['comp','res','out','wealth','power'];
+  h+=`<section><h2>ปฏิกิริยา 5 ธาตุกับตัวคุณ</h2><p class="lede">จำนวนช่องนับ ${known?7:5} ช่อง ไม่รวมช่องดิถี</p><div class="box scroll"><table class="rel"><thead><tr><th>ชื่อเรียก</th><th>ธาตุ</th><th>ทักษะที่ได้</th><th>ในผัง</th></tr></thead><tbody>
+  ${rels.map(rr=>{const e=a.E(rr);return `<tr><td><b>${REL[rr].n}</b><br><span class="small">${REL[rr].d}</span></td><td style="white-space:nowrap"><span class="dot" style="background:${cssEl[e]}"></span>${ELN[e]}</td><td>${REL[rr].sk.replace('ทักษะการ','การ')}</td><td class="cnt">${a.counts[rr]} ช่อง</td></tr>`;}).join('')}</tbody></table></div></section>`;
+  const pct=Math.max(0,Math.min(100,a.scaled/11*100));
+  const segs=[['xweak','อ่อนพิเศษ'],['weak','อ่อน'],['bal','สมดุล'],['strong','แข็ง'],['xstrong','แข็งพิเศษ']];
+  h+=`<section><h2>กำลังดิถี</h2><p class="lede">นับเฉพาะคะแนนคู่ธาตุและธาตุก่อเกิด เต็ม 11 คะแนน</p>
+  <div class="box"><div class="strength"><div class="seal"><div class="n">${fmt(a.score)}</div><div class="d">จาก ${a.max} คะแนน</div></div><div><h3>${T.n}</h3><div class="sub">${T.sub}${!known?` · เทียบ ≈ ${a.scaled.toFixed(1)}/11`:''}</div><div style="margin-top:6px;font-weight:600">${T.how}</div></div></div>
+  <div class="scale"><div class="pin" style="left:calc(${pct}% - 1px)"></div><div class="bar">${segs.map(s=>`<div class="${s[0]===a.type?'on':''}">${s[1]}</div>`).join('')}</div><div class="ticks">${[0,3,6,9,11].map(t=>`<span style="left:${t/11*100}%">${t}</span>`).join('')}</div></div>
+  <p style="margin:10px 0 0">${T.lead}</p></div>
+  <div class="box"><ol class="steps"><li><b>ระบุธาตุของดิถี</b>คนธาตุ${elName(dm)}</li><li><b>นับคะแนนคู่ธาตุและธาตุก่อเกิด</b>คู่ธาตุ = ${ELN[de]} · ธาตุก่อเกิด = ${ELN[(de+4)%5]} → ${fmt(a.score)}/${a.max} คะแนน${a.rooted?' · ดิถีมีรกราก':' · ดิถีไม่มีรกราก'}</li><li><b>ระบุประเภทกำลังดวง</b>${T.n} (ช่วง ${T.rng} คะแนน)</li><li><b>ระบุวิธีรับความสำเร็จ</b>${T.how}</li><li><b>ระบุธาตุที่ช่วยปรับสมดุล</b>${a.fav.slice(0,2).map(x=>`${REL[x].n} (${ELN[a.E(x)]})`).join(' และ ')}</li><li><b>เลือกกลุ่มลูกค้าตรงกับธาตุให้คุณ</b>${a.favEl.slice(0,2).map(e=>`ลูกค้าที่ต้องการ${ELINFO[e].cust}`).join(' · ')}</li></ol></div></section>`;
+  const favCard=(rr,i)=>{const e=a.E(rr),I=ELINFO[e],minor=i===2;
+    return `<div class="fav${minor?' minor':''}" style="background:${cssEl[e]}"><div class="rank">ธาตุให้คุณ ${i+1}${minor?' (แล้วแต่กรณี)':''} · ${REL[rr].n}</div><h3><span class="zh">${B.EL_ZH[e]}</span>ธาตุ${ELN[e]}</h3><div class="sw" aria-hidden="true">${I.sw.map(c=>`<i style="background:${c}"></i>`).join('')}</div>
+    <dl><dt>สีเสริมดวง</dt><dd>${I.color}</dd><dt>ลวดลาย</dt><dd>${I.shape}</dd><dt>ทิศ</dt><dd>${DIR[e]}</dd>${minor?'':`<dt>ตัวเลข</dt><dd>${NUM[e]}</dd><dt>วัสดุ</dt><dd>${I.mat}</dd>`}<dt>กิจกรรม</dt><dd>${I.act}</dd><dt>งานเสริมดวง</dt><dd>${I.work}</dd><dt>สถานที่</dt><dd>${I.place}</dd>${minor?'':`<dt>กลุ่มลูกค้า</dt><dd>ลูกค้าที่ต้องการ${I.cust}</dd><dt>ธุรกิจธาตุ${ELN[e]}</dt><dd>${I.biz}</dd>`}</dl></div>`;};
+  h+=`<section><h2>ธาตุให้คุณ และวิธีเสริมดวง</h2><p class="lede">${a.type==='weak'||a.type==='xstrong'?'ต้องการเพิ่มกำลังดิถี ให้เสริมคู่ธาตุและธาตุก่อเกิด':'ต้องการลดกำลังดิถี ให้เสริมธาตุถ่ายเทและธาตุโชคลาภ'}</p>${a.fav.map(favCard).join('')}
+  <div class="box" style="margin-top:10px;font-size:14px"><b>ธาตุที่ควรใช้อย่างพอดี:</b> ${rels.filter(x=>!a.fav.includes(x)).map(x=>`${ELN[a.E(x)]} (${REL[x].n})`).join(', ')}<br><span class="small">ไม่ได้แปลว่าห้ามใช้ แต่ถ้าเติมมากไปจะดึงกำลังดิถีออกจากจุดที่ให้ความสำเร็จ</span></div></section>`;
+  const tot=a.stars.reduce((s,x)=>s+x[1],0);
+  h+=`<section><h2>พรสวรรค์ 10 ดาวเทพ</h2><p class="lede">ดาวที่ปรากฏในผัง ถ่วงน้ำหนักตามคะแนนช่อง</p><div class="box">${a.stars.map(([k,w],i)=>{const S=STAR[k];return `<div class="starbar"><div class="zh">${S.zh}</div><div class="t"><b>${S.th}${i===0?'<span class="pill">ดาวเด่น</span>':''}</b><em>${S.en}</em><small>${S.d}</small><div class="meter"><i style="width:${w/tot*100}%"></i></div></div><div class="w">${w}</div></div>`;}).join('')}</div></section>`;
+  const nb=NOBLE[dm],yb=P.year.b,partner=(dm+5)%10,opp=(yb+6)%12,zz=b=>`ปี${B.BR_TH[b]} (${B.BR_ANIMAL[b]})`;
+  h+=`<section><h2>คนที่ช่วยเสริมดวง</h2><p class="lede">คุณเกิด${zz(yb)}</p><div class="box">
+   <div class="pair"><div class="ic">贵人</div><div><b>ผู้อุปถัมภ์</b><p>คนเกิด${zz(nb[0])} และ${zz(nb[1])}</p></div></div>
+   <div class="pair"><div class="ic" style="background:${cssEl[B.stemEl(partner)]};color:#fff">${B.STEM_ZH[partner]}</div><div><b>ถูกชะตาสุดขั้ว</b><p>คนธาตุ${elName(partner)}</p></div></div>
+   <div class="pair"><div class="ic" style="background:${cssEl[de]};color:#fff">${B.STEM_ZH[dm]}</div><div><b>เออออห่อหมก</b><p>คนธาตุ${elName(dm)} เหมือนกัน</p></div></div>
+   <div class="pair"><div class="ic">${B.BR_ZH[opp]}</div><div><b>มองมุมกลับ ปรับมุมมอง</b><p>คนเกิด${zz(opp)}</p></div></div></div></section>`;
+  const n7=a.counts;
+  h+=`<section class="ws"><h2>Workshop</h2><div class="box"><b>Workshop 1 · 5 ไลฟ์สไตล์ที่สะท้อนธาตุประจำตัว</b><ol style="padding-left:20px;margin:10px 0 0">${prof.tr.slice(0,5).map(t=>`<li>ฉัน <span class="blank"></span> เพราะว่า คนธาตุ${elName(dm)}${t}</li>`).join('')}</ol></div>
+  <div class="box"><b>Workshop 2 · 11 ข้อเกี่ยวกับพื้นดวงของฉัน</b><ol style="padding-left:20px;margin:10px 0 0"><li>ธาตุประจำตัวของฉันคือ ธาตุ${ELN[de]}</li>${rels.map(x=>`<li>${REL[x].n} ของฉันคือ ธาตุ${ELN[a.E(x)]} ทำให้ฉันมี${REL[x].sk}</li>`).join('')}${rels.map(x=>`<li>ในผังพื้นดวงมี${REL[x].n} ${n7[x]} ช่อง</li>`).join('')}</ol></div></section>`;
+  return h;
+}
+
+// ---------- TAB: deep ----------
+function renderDeep(){
+  const me=ME,a=me.a,P=me.P,dm=a.dm,de=a.de,order=['hour','day','month','year'].filter(k=>P[k]);
+  const PKN={hour:'ยาม',day:'วัน',month:'เดือน',year:'ปี'};
+  let h=renderAccuracy()+`<section><h2>ผังขั้นสูง</h2><p class="lede">ธาตุซ่อนครบทุกตัว ดาวเทพของแต่ละตัว และวงจร 12 ช่วงพลังของดิถีในแต่ละหลัก</p><div class="box scroll"><table class="adv"><thead><tr><th></th>${order.map(k=>`<th>${PKN[k]}</th>`).join('')}</tr></thead><tbody>
+  <tr><td>หลัก</td>${order.map(k=>`<td>${pill(P[k])}</td>`).join('')}</tr>
+  <tr><td>ดาวราศีบน</td>${order.map(k=>`<td>${k==='day'?'ดิถี':`<b>${B.tenGod(P[k].s,dm)}</b><br><span class="small">${starShort(B.tenGod(P[k].s,dm))}</span>`}</td>`).join('')}</tr>
+  <tr><td>ธาตุซ่อน</td>${order.map(k=>`<td>${B.HIDDEN_FULL[P[k].b].map((s,i)=>`<div class="hs${i?' sub':''}"><span style="color:${cssEl[B.stemEl(s)]}">${B.STEM_ZH[s]}</span> ${B.tenGod(s,dm)}</div>`).join('')}</td>`).join('')}</tr>
+  <tr><td>ช่วงพลังดิถี</td>${order.map(k=>{const st=STAGE[B.lifeStage(dm,P[k].b)];return `<td><b>${st[0]}</b><br><span class="small">${st[1]}</span></td>`;}).join('')}</tr></tbody></table></div>
+  <p class="small">ช่วงพลังที่เป็น 长生 冠带 临官 帝旺 แปลว่าดิถีมีแรงในหลักนั้น ส่วน 病 死 绝 แปลว่าแรงน้อย ด้านชีวิตของหลักนั้นต้องอาศัยคนหรือธาตุช่วย ธาตุซ่อนตัวแรกคือตัวหลัก ตัวถัดไปคือตัวรอง</p></section>`;
+  const sym=L.symbolic(me);
+  h+=`<section><h2>ดาวพิเศษในดวง</h2><p class="lede">ดาวที่อยู่ในผังจะส่งผลตลอดชีวิต ดาวที่ไม่อยู่ในผังจะมาเป็นช่วงเมื่อปีหรือวันนั้นมาถึง</p><div class="box">${sym.map(s=>`<div class="pair"><div class="ic">${s.zh}</div><div><b>${s.n}</b> <span class="small">นักษัตร ${[...new Set(s.br)].map(b=>B.BR_TH[b]).join(', ')}</span><p>${s.where.length?`<b style="color:var(--ink)">อยู่ในหลัก${s.where.join(', ')}</b> · `:'ไม่อยู่ในผัง · '}${s.d}</p></div></div>`).join('')}</div></section>`;
+  const it=L.interactions(P);
+  h+=`<section><h2>ปฏิกิริยาภายในดวง</h2><p class="lede">หลักต่าง ๆ ชง ฮะ เฮ้ง ไห่ กันเองอย่างไร</p><div class="box">${it.length?it.map(x=>`<div class="pair"><div class="ic">${x.zh}</div><div><b>${x.t}</b><p>${x.d}</p></div></div>`).join(''):'<p style="margin:0">ไม่มีการชงหรือฮะที่เด่นในพื้นดวง ดวงค่อนข้างนิ่ง</p>'}</div></section>`;
+  // life aspects
+  const {g,sh}=L.groups(me); const top=Object.entries(sh).sort((x,y)=>y[1]-x[1]); const favG=a.fav.slice(0,2);
+  const symIn=n=>sym.find(s=>s.n===n&&s.where.length);
+  let car=`<p>${GROUP_CAREER[top[0][0]]}</p>`;
+  car+=`<p>${favG.includes(top[0][0])?'กลุ่มดาวนี้ตรงกับธาตุให้คุณ ยิ่งเดินสายนี้ยิ่งไปได้ไกล':`กลุ่มดาวนี้ไม่ใช่ธาตุให้คุณ ทำได้ดีแต่เหนื่อย ควรผสมงานสาย${favG.map(x=>REL[x].n).join('และ')} (${STAR_ROLE[favG[0]]}) เข้าไปด้วย`}</p>`;
+  const lack=Object.entries(g).filter(([k,w])=>w===0).map(([k])=>GROUP_LACK[k]); if(lack.length) car+=`<p>${lack.join(' ')}</p>`;
+  [['ดาวม้า','มีดาวม้าในดวง งานที่ต้องเดินทาง ต่างถิ่น หรือต่างประเทศจะส่งเสริม'],['ดาวปัญญา','มีดาวปัญญาในดวง งานเขียน สอน และงานที่ใช้การคิดเด่น'],['ดาวแม่ทัพ','มีดาวแม่ทัพในดวง คนมักยอมรับให้เป็นผู้นำ'],['ดาวฉัตร','มีดาวฉัตรในดวง เหมาะงานเฉพาะทางหรือศาสตร์ที่ต้องลงลึก']].forEach(([n,t])=>{if(symIn(n))car+=`<p>${t}</p>`;});
+  const wsh=sh.wealth, strong=a.type==='strong'||a.type==='xstrong'||a.type==='bal';
+  let wl=wsh>=0.28?(strong?'ดาวโชคลาภเด่นและดิถีมีแรงพอจะถือ เหมาะธุรกิจหรือการลงทุนในสิ่งที่เข้าใจ':'ดาวโชคลาภเด่นแต่ดิถียังแรงไม่พอถือเงินก้อนใหญ่คนเดียว เงินผ่านมือเยอะแต่เก็บยาก ควรมีทีม ระบบ หรือหุ้นส่วนช่วยถือ'):wsh<0.1?(strong?'ดิถีมีแรงแต่ช่องทางเงินในผังน้อย ให้สร้างรายได้จากฝีมือและผลงานก่อน แล้วเงินจะตามมา':'เน้นรายได้มั่นคง สะสมทีละขั้น ไม่เหมาะกับการเสี่ยงสูง'):'ดาวโชคลาภพอดี หาเงินได้ตามแรงที่ลงไป ถ้าตั้งเป้าเป็นตัวเลขชัดจะไปได้ไวขึ้น';
+  const sw=Object.fromEntries(a.stars); if((sw.IW||0)>(sw.DW||0)) wl+=' สไตล์เงินเป็นแบบดีลและโอกาส เงินเข้าเป็นก้อน'; else if((sw.DW||0)>(sw.IW||0)) wl+=' สไตล์เงินเป็นแบบรายได้ประจำและการสะสม';
+  if((sw.RW||0)>=2) wl+=' ดาวชิงทรัพย์ในดวงค่อนข้างเด่น ระวังเงินรั่วจากการให้ยืม ค้ำประกัน หรือหุ้นส่วน';
+  // love
+  const spG=me.v.g==='m'?['DW','IW']:['DO','7K']; const spW=(sw[spG[0]]||0)+(sw[spG[1]]||0);
+  const dbr=P.day.b, dbe=B.BR_EL[dbr], dbRel=B.rel(dbe,de);
+  let lv=`ดาวคู่ครองของ${me.v.g==='m'?'ผู้ชายคือดาวโชคลาภ (ธาตุ'+ELN[a.E('wealth')]+')':'ผู้หญิงคือดาวอำนาจ (ธาตุ'+ELN[a.E('power')]+')'} `;
+  lv+=spW===0?'ซึ่งไม่ปรากฏชัดในผัง มักพบคู่ช้าหรือโฟกัสเรื่องอื่นก่อน ช่วงปีที่ดาวนี้เข้ามาคือจังหวะที่มีโอกาสสูง':spW>=4?'ซึ่งมีหลายตำแหน่ง มีคนเข้ามาในชีวิตเยอะ ต้องเลือกให้ดี':'ซึ่งมีพอดี ความรักเป็นไปตามจังหวะชีวิต';
+  lv+=`<br>ตำแหน่งคู่ครอง (ราศีล่างหลักวัน) เป็น${B.BR_TH[dbr]} ธาตุ${ELN[dbe]} คือ${REL[dbRel].n}ของคุณ ${me.fav.slice(0,2).includes(dbe)?'คู่มักเป็นคนที่ช่วยเสริมคุณ':'คู่อาจมีมุมที่ต้องปรับเข้าหากัน การเปิดใจคุยสำคัญ'}`;
+  if(it.some(x=>x.t.includes('(วัน)')&&x.zh==='冲')) lv+='<br>หลักวันถูกชงในผัง บ้านและความสัมพันธ์มีความเคลื่อนไหว ควรให้เวลากับคนใกล้ตัว';
+  if(symIn('ดาวเสน่ห์')) lv+='<br>มีดาวเสน่ห์ในดวง คนเข้าหาง่าย';
+  lv+=`<br>นักษัตรที่เข้ากับหลักวันของคุณ: ${B.BR_TH[B.HARM6[dbr]]} (ฮะ) และ ${[0,1,2,3,4,5,6,7,8,9,10,11].filter(x=>x!==dbr&&x%4===dbr%4).map(x=>B.BR_TH[x]).join(', ')} (ซาฮะ)`;
+  const cy0=curCY(); const spYears=[]; for(let cy=cy0;cy<cy0+12;cy++){const s=((cy-4)%10+10)%10;if(spG.includes(B.tenGod(s,dm)))spYears.push(cy);} if(spYears.length) lv+=`<br>ปีที่ดาวคู่ครองเข้าในอีก 12 ปี: ${spYears.join(', ')}`;
+  // health
+  const dist=me.dist; const hi=dist.map((x,i)=>[i,x]).filter(x=>x[1]>=0.35), lo=dist.map((x,i)=>[i,x]).filter(x=>x[1]<0.08);
+  let hl=`<div class="dbar">${dist.map((x,i)=>`<div style="flex:${Math.max(x,0.02)};background:${cssEl[i]}" title="${ELN[i]}">${x>=0.1?ELN[i]:''}</div>`).join('')}</div><p class="small" style="margin:4px 0 10px">สัดส่วนธาตุในผัง: ${dist.map((x,i)=>`${ELN[i]} ${Math.round(x*100)}%`).join(' · ')}</p>`;
+  hi.forEach(([i])=>hl+=`<p><b>ธาตุ${ELN[i]}มาก</b> ระบบที่สัมพันธ์คือ${ORGAN[i]} มักใช้งานหนัก ${HEALTH_TIP[i]}</p>`);
+  lo.forEach(([i])=>hl+=`<p><b>ธาตุ${ELN[i]}น้อย</b> ระบบที่สัมพันธ์คือ${ORGAN[i]} อาจเป็นจุดอ่อน ${HEALTH_TIP[i]}</p>`);
+  if(!hi.length&&!lo.length) hl+='<p>ธาตุในผังกระจายค่อนข้างสมดุล ไม่มีธาตุที่มากหรือน้อยจนเด่น</p>';
+  hl+='<p class="small">เป็นแนวโน้มตามหลักธาตุ ใช้เตือนตัวเองให้ดูแล ไม่ใช่การวินิจฉัยโรค</p>';
+  let st=sh.res>=0.2?'ดาวก่อเกิดเด่น เรียนรู้ได้ลึก เหมาะเรียนต่อหรือสะสมใบรับรอง':sh.res===0?'เรียนรู้จากการลงมือทำได้ดีกว่านั่งอ่าน ควรเลือกคอร์สที่มีภาคปฏิบัติ':'เรียนรู้ได้ดีเมื่อมีเป้าหมายชัดว่าจะเอาไปใช้ทำอะไร';
+  if(symIn('ดาวปัญญา')) st+=' มีดาวปัญญาในดวงช่วยเรื่องสอบและงานเขียน';
+  const wenYears=[]; for(let cy=cy0;cy<cy0+12;cy++){if(((cy-4)%12+12)%12===B.WENCHANG[dm])wenYears.push(cy);} st+=`<br>ปีดาวปัญญาเข้า: ${wenYears.join(', ')}`;
+  const allies=[...new Set([B.HARM6[P.year.b],...[0,1,2,3,4,5,6,7,8,9,10,11].filter(x=>x!==P.year.b&&x%4===P.year.b%4),...NOBLE[dm]])];
+  const kit=`<dl class="kit"><dt>สีมงคล</dt><dd>${me.fav.slice(0,2).map(e=>ELINFO[e].color).join(' / ')}</dd><dt>ทิศมงคล</dt><dd>${me.fav.slice(0,2).map(e=>DIR[e]).join(' / ')}</dd><dt>เลขมงคล</dt><dd>${me.fav.slice(0,2).map(e=>NUM[e]).join(', ')}</dd><dt>นักษัตรที่เกื้อหนุน</dt><dd>${allies.map(b=>`${B.BR_TH[b]}`).join(', ')}</dd><dt>ธาตุที่ควรใช้พอดี</dt><dd>${[0,1,2,3,4].filter(e=>!me.fav.includes(e)).map(e=>ELN[e]).join(', ')}</dd></dl>`;
+  const asp=[['การงาน','官',car],['การเงิน','财',`<p>${wl}</p>`],['ความรักและคู่ครอง','合',`<p>${lv}</p>`],['สุขภาพ','身',hl],['การเรียนและพัฒนาตัวเอง','学',`<p>${st}</p>`],['เครื่องมือเสริมดวงประจำตัว','九',kit]];
+  h+=`<section><h2>ชีวิตทุกด้าน</h2><p class="lede">อ่านจากกลุ่มดาวเทพ ธาตุให้คุณ และดาวพิเศษรวมกัน</p>${asp.map(([t,z,c],i)=>`<details class="asp"${i<2?' open':''}><summary><span class="ic">${z}</span>${t}</summary><div class="aspb">${c}</div></details>`).join('')}</section>`;
+  return h;
+}
+function curCY(){const now=new Date();const r=B.compute({y:now.getFullYear(),m:now.getMonth()+1,d:now.getDate(),h:12,mi:0,tz:7,lon:105,solar:false});return r.cy;}
+
+
+function vbars(vals,fav){return vals.map((v,e)=>`<div class="vbar"><span class="nm">${ELN[e]}</span><span class="tr"><i style="background:${cssEl[e]};${v>=0?`left:50%;width:${v*50}%`:`right:50%;width:${-v*50}%`}"></i></span><span class="v">${v>=0?'+':''}${v.toFixed(2)}</span></div>`).join('');}
+function renderAccuracy(){
+  const me=ME,a=me.a,P=me.P,dm=a.dm; const ps=me.ps, cl=me.cl;
+  const same=a.type===me.pt||((a.type==='strong'||a.type==='xstrong')&&(me.pt==='strong'||me.pt==='xstrong'))||((a.type==='weak'||a.type==='xweak')&&(me.pt==='weak'||me.pt==='xweak'));
+  const favSame=a.favEl.slice(0,2).every(e=>me.fav.slice(0,2).includes(e));
+  const seasonN={hot:'ฤดูร้อน ดวงต้องการน้ำช่วยคลายร้อน',cold:'ฤดูหนาว ดวงต้องการไฟช่วยให้อบอุ่น',mild:'ฤดูที่อากาศไม่สุดขั้ว ธาตุปรับฤดูมีผลปานกลาง'}[cl.season];
+  const pat=PATTERN[me.pat.g];
+  const known=!!P.hour; const cal=me.calibrated||0;
+  const checks=[[known,'รู้เวลาเกิด',known?'ครบ 4 หลัก':'ขาดหลักยาม ผลหลายส่วนเป็นค่าประมาณ'],[!me.r.warn.length,'ไม่อยู่ใกล้รอยต่อเวลา',me.r.warn.length?'อยู่ใกล้รอยต่อ ควรตรวจกับผังอื่น':'ผังนิ่ง ไม่คลาดง่าย'],[same,'วิธีคำนวณกำลังดวงตรงกัน',same?'วิธีเอกสารและวิธีละเอียดให้ผลทางเดียวกัน':'สองวิธีให้ผลต่างกัน แอปจึงเฉลี่ยให้'],[cal>=5,'ปรับจูนด้วยเหตุการณ์จริง',cal>=5?`ใช้ข้อมูลจริง ${cal} ปีแล้ว`:'ยังไม่ได้ปรับจูน ไปที่แท็บจังหวะดวงเพื่อเพิ่มความแม่น']];
+  const score=checks.filter(c=>c[0]).length;
+  return `<section style="margin-top:14px"><h2>ความแม่นยำของผล</h2><p class="lede">ดวงเดียวกันอ่านได้หลายตำรา แอปรวม 4 ชั้นเข้าด้วยกันแล้วใช้ผลรวมคำนวณปี เดือน วัน และการดูคู่</p>
+  <div class="box"><div class="pscore"><div class="n">${score}/4</div><div><b>${['ความมั่นใจต่ำ','ความมั่นใจต่ำ','ความมั่นใจปานกลาง','ความมั่นใจค่อนข้างสูง','ความมั่นใจสูง'][score]}</b><p class="small" style="margin:0">ยิ่งผ่านมากข้อ ผลยิ่งเชื่อถือได้</p></div></div>
+  <ul class="rem">${checks.map(c=>`<li class="${c[0]?'pos':'neg'}"><b>${c[1]}</b> · ${c[2]}</li>`).join('')}</ul></div>
+  <div class="box"><ol class="steps">
+   <li><b>ชั้นที่ 1 · วิธีตามเอกสาร</b>${fmt(a.score)}/${a.max} คะแนน = ${TYPE[a.type].n} · ธาตุให้คุณ ${a.favEl.slice(0,2).map(e=>ELN[e]).join(', ')}</li>
+   <li><b>ชั้นที่ 2 · วิธีละเอียด (ธาตุซ่อนครบ + น้ำหนักฤดูกาล)</b>แรงหนุนดิถี ${Math.round(ps.sup*100)}% = ${PT_N[me.pt]} · ดิถี${SEASON_STATE[ps.dmState]}<br><span class="small">สัดส่วนธาตุ: ${ps.pct.map((x,i)=>`${ELN[i]} ${Math.round(x*100)}%`).join(' · ')}</span></li>
+   <li><b>ชั้นที่ 3 · ธาตุปรับสมดุลฤดู (调候)</b>เกิด${seasonN} ตามตำราฉงทงเป่าเจี้ยน ดิถี${elName(dm)}เกิดเดือน${B.BR_TH[P.month.b]} ใช้ ${cl.stems.map(s=>`${B.STEM_ZH[s]} (${elName(s)})`).join(', ')}</li>
+   <li><b>ชั้นที่ 4 · ปรับจูนด้วยเหตุการณ์จริง</b>${cal>=5?`ปรับจาก ${cal} ปีที่คุณให้คะแนนไว้`:'ยังไม่ได้ใช้ ต้องให้คะแนนปีที่ผ่านมาอย่างน้อย 5 ปี'}</li></ol></div>
+  <div class="box"><b>ค่าของแต่ละธาตุที่แอปใช้จริง</b><p class="small" style="margin:2px 0 10px">บวก = ช่วยคุณ ลบ = ทำให้เหนื่อย ธาตุให้คุณฉบับรวมคือ <b style="color:var(--ink)">${me.fav.slice(0,2).map(e=>ELN[e]).join(' และ ')}</b></p>${vbars(me.vals)}
+  <p style="margin:12px 0 0;font-size:15px">${favSame?'ธาตุให้คุณฉบับรวมตรงกับธาตุให้คุณตามเอกสาร ใช้ตามเอกสารได้เต็มที่':`ธาตุให้คุณฉบับรวมต่างจากเอกสารเล็กน้อย เพราะวิธีละเอียด${cl.season!=='mild'?' และธาตุปรับฤดู':''}${cal>=5?' และข้อมูลจริงของคุณ':''}ให้น้ำหนักต่างออกไป ในแท็บพื้นดวงยังแสดงตามเอกสารเพื่อใช้ประกอบการเรียน`}</p></div>
+  <div class="box"><div class="pair" style="padding-top:0"><div class="ic">${pat[0].slice(0,2)}</div><div><b>โครงสร้างดวง (格局): ${pat[0]}</b><p>${pat[1]}${me.pat.revealed?'':' (ธาตุในเดือนเกิดไม่โผล่ขึ้นราศีบน จึงใช้ธาตุหลักของเดือน)'}</p></div></div>
+  <div class="pair" style="border-bottom:0;padding-bottom:0"><div class="ic">纳音</div><div><b>ธาตุนาอิน (纳音)</b><p>${['year','month','day','hour'].filter(k=>P[k]).map(k=>{const n=B.nayin(P[k].s,P[k].b);return `${POS[k].n}: ${n[0]} ${n[1]}`;}).join('<br>')}<br><span class="small">หลักปีบอกภาพพื้นฐานของชีวิต หลักวันบอกตัวตนเชิงลึก</span></p></div></div></div></section>`;
+}
+let CALOPEN=false;
+function renderCalib(){
+  const me=ME; const R=store.get(ratingsKey(),{}); const cy0=curCY(); const y0=Math.max(me.inp.y+12,cy0-30);
+  const rows=[]; for(let cy=cy0-1;cy>=y0;cy--){const s=((cy-4)%10+10)%10,b=((cy-4)%12+12)%12;rows.push(`<div class="rate"><span class="yy"><b>${cy}</b><small>อายุ ${cy-me.inp.y} · ปี${yearName(cy)}</small></span>${pill({s,b})}<span class="rb" data-cy="${cy}">${[[1,'ดี'],[0,'ธรรมดา'],[-1,'แย่']].map(([v,n])=>`<button data-v="${v}" class="${R[cy]===v?'on':''}">${n}</button>`).join('')}</span></div>`);}
+  const acc=L.accuracy(me,R); const n=Object.keys(R).length;
+  let accH=''; if(acc){ accH=`<div class="acc"><div><b>${acc.before}/${acc.n}</b><small>ทายถูกก่อนปรับจูน</small></div><div><b>${acc.after==null?'–':acc.after+'/'+acc.n}</b><small>${acc.after==null?`ต้องอีก ${5-n} ปี`:'ทายถูกหลังปรับจูน'}</small></div></div>`; }
+  return `<section style="margin-top:14px"><h2>ปรับความแม่นด้วยชีวิตจริง</h2><p class="lede">ให้คะแนนภาพรวมของปีที่ผ่านมา ว่าเป็นปีดี ธรรมดา หรือแย่ แอปจะหาว่าธาตุไหนช่วยคุณจริง แล้วใช้ผลนั้นคำนวณปีข้างหน้า วัยจร และวันดี ยิ่งให้คะแนนมากปียิ่งแม่น แนะนำอย่างน้อย 8 ปี</p>
+  <div class="box">${accH}<p class="small" style="margin:0 0 6px">ปีจีนเริ่มราว 4 ก.พ. ถ้าเรื่องใหญ่เกิดเดือน ม.ค. ให้นับเป็นปีก่อนหน้า ตัวเลข "หลังปรับจูน" ทดสอบแบบปิดคำตอบทีละปี จึงไม่ใช่การจำคำตอบ</p>
+  <details class="asp" id="calD" style="margin-top:8px"${(n<5||CALOPEN)?' open':''}><summary><span class="ic">验</span>ให้คะแนนปีที่ผ่านมา (${n} ปี)</summary><div class="aspb">${rows.join('')}${n?'<button class="btn2" id="calClear">ล้างคะแนนทั้งหมด</button>':''}</div></details>
+  ${n>=6?`<button class="btn2" id="timeTest">ทดสอบว่าเวลาเกิดไหนตรงกับชีวิตจริงที่สุด</button><div id="ttOut"></div>`:''}</div></section>`;
+}
+function runTimeTest(){
+  const R=store.get(ratingsKey(),{}); const known=!!ME.P.hour; const curHb=known?ME.P.hour.b:null;
+  const cands=known?[-2,-1,0,1,2].map(d=>(curHb+d+12)%12):[...Array(12).keys()];
+  const res=cands.map(hb=>{const p=L.makePerson(meInput({h:(hb*2)%24,mi:0,solar:false}),{noCal:true});const ac=L.accuracy(p,R);return {hb,hs:p.P.hour.s,after:ac.after,before:ac.before,n:ac.n};});
+  const best=Math.max(...res.map(r=>r.after)); const tie=res.every(r=>r.after===best);
+  return `<table class="rel" style="margin-top:12px"><thead><tr><th>ยามเกิด</th><th>เวลา</th><th>ทายถูก</th></tr></thead><tbody>${res.map(r=>`<tr${r.after===best?' style="font-weight:600"':''}><td>${B.STEM_TH[r.hs]}${B.BR_TH[r.hb]}${r.hb===curHb?' (ปัจจุบัน)':''}</td><td>${L.hourRange(r.hb)}</td><td>${r.after}/${r.n}${r.after===best?' ✓':''}</td></tr>`).join('')}</tbody></table>
+  ${tie?'<p style="margin-top:8px;font-size:15px">ทุกยามทายถูกเท่ากัน แปลว่าข้อมูลปีที่ให้ไว้ยังแยกเวลาเกิดไม่ออก ลองให้คะแนนเพิ่มโดยเฉพาะปีที่มีเรื่องใหญ่ เช่น ย้ายบ้าน แต่งงาน มีลูก เปลี่ยนงาน</p>':''}<p class="small" style="margin-top:8px">${known?'ถ้ายามอื่นทายถูกมากกว่าชัดเจน (ต่างกัน 2 ปีขึ้นไป) อาจเป็นไปได้ว่าเวลาเกิดที่บันทึกไว้คลาด ลองถามผู้ใหญ่หรือดูสูติบัตรอีกครั้ง':'ยามที่ทายถูกมากที่สุดคือเวลาที่น่าจะเป็นไปได้ แต่ยังไม่ใช่ข้อสรุป ถ้าต่างกันไม่มากให้ถือว่ายังบอกไม่ได้'} เวลาในตารางเป็นเวลาสุริยะ</p>`;
+}
+function bindLuck(){
+  document.querySelectorAll('.rb button').forEach(b=>b.onclick=()=>{const cy=+b.parentNode.dataset.cy,v=+b.dataset.v;CALOPEN=true;const R=store.get(ratingsKey(),{});if(R[cy]===v)delete R[cy];else R[cy]=v;store.set(ratingsKey(),R);const y=window.scrollY;buildMe();show();window.scrollTo(0,y);});
+  const c=$('#calClear'); if(c) c.onclick=()=>{store.set(ratingsKey(),{});buildMe();show();};
+  const t=$('#timeTest'); if(t) t.onclick=()=>{$('#ttOut').innerHTML=runTimeTest();};
+}
+
+// ---------- TAB: luck ----------
+function yearName(cy){const s=((cy-4)%10+10)%10,b=((cy-4)%12+12)%12;return `${B.STEM_TH[s]}${B.BR_TH[b]}`;}
+function renderLuck(){
+  const me=ME,a=me.a; let h=renderCalib();
+  const now=Date.now(); const age=(now-me.birthMs)/31556952000;
+  if(me.lk){ const cur=L.currentLuck(me,now);
+    h+=`<section><h2>วัยจร 10 ปี (大运)</h2><p class="lede">เดิน${me.lk.fwd?'ตามเข็ม':'ทวนเข็ม'} เริ่มวัยจรแรกราวอายุ ${me.lk.start.toFixed(1)} ปี แต่ละช่วงครึ่งแรกเด่นเรื่องราศีบน ครึ่งหลังเด่นเรื่องราศีล่าง</p><div class="box">`;
+    me.lk.list.forEach(p=>{ const e=L.evalPillar(me,p.s,p.b,'luck'); const isC=cur&&p.from===cur.from; const y0=Math.round(me.inp.y+p.from);
+      h+=`<div class="lrow${isC?' cur':''}">${pill(p)}<div class="t"><b>อายุ ${Math.round(p.from)}–${Math.round(p.to)} ปี</b> <span class="small">(ค.ศ. ${y0}–${y0+9})</span>${isC?'<span class="pill">ตอนนี้</span>':''}<small>${e.gS===e.gB?`ทั้งช่วง: ${GOD_YEAR[e.gS].th}`:`ครึ่งแรก: ${GOD_YEAR[e.gS].th} · ครึ่งหลัง: ${GOD_YEAR[e.gB].th}`}</small></div>${lab(e.sc)}</div>`; });
+    h+=`</div>`;
+    if(cur){ const e=L.evalPillar(me,cur.s,cur.b,'luck');
+      h+=`<div class="box"><b>ช่วงวัยจรปัจจุบัน ${B.STEM_TH[cur.s]}${B.BR_TH[cur.b]} (${elName(cur.s)} / ${ELN[B.BR_EL[cur.b]]})</b><p>ราศีบนเป็น${STAR[e.gS].th} ธาตุ${ELN[e.es]} (${me.val(e.es)>0?'ธาตุให้คุณ':'ไม่ใช่ธาตุให้คุณ'}): ${me.val(e.es)>0?GOD_YEAR[e.gS].g:GOD_YEAR[e.gS].c}</p>${e.gS===e.gB&&e.es===e.eb?'':`<p>ราศีล่างเป็น${STAR[e.gB].th} ธาตุ${ELN[e.eb]} (${me.val(e.eb)>0?'ธาตุให้คุณ':'ไม่ใช่ธาตุให้คุณ'}): ${me.val(e.eb)>0?GOD_YEAR[e.gB].g:GOD_YEAR[e.gB].c}</p>`}<p>วิธีใช้ช่วงนี้: ${me.val(e.es)>0&&me.val(e.eb)>0?'เป็นช่วงที่แรงส่งดี ควรลงมือเรื่องใหญ่ที่วางแผนไว้':`เติมธาตุ${me.fav.slice(0,2).map(x=>ELN[x]).join('และ')}อย่างสม่ำเสมอ และ${GOD_YEAR[e.gS].fix}`}</p>${e.notes.filter(x=>x.t==='clash').map(x=>`<p>${L.noteText(me,x)}</p>`).join('')}</div>`; }
+    h+=`</section>`;
+  }
+  const cy0=curCY(); const years=[]; for(let cy=cy0-1;cy<=cy0+10;cy++) years.push(L.yearEval(me,cy));
+  h+=`<section><h2>ปีจร (流年)</h2><p class="lede">ปีจีนเริ่มที่ลี่ชุน ราว 4 ก.พ. ของทุกปี แตะแต่ละปีเพื่อดูธีม จุดระวัง วิธีแก้ และรายเดือน</p>`;
+  const mini=years.map(e=>`<div class="ym ${L.label(e.total).c}" title="${e.cy}"><span>${e.cy}</span></div>`).join('');
+  h+=`<div class="ystrip">${mini}</div>`;
+  years.forEach(e=>{ const Lb=L.label(e.total); const open=e.cy===cy0||e.cy===OPEN;
+    const gs=`<p><b>ราศีบน ${B.STEM_TH[e.s]} = ${STAR[e.gS].th}</b><br>ธีม: ${GOD_YEAR[e.gS].th} · ${me.val(e.es)>0?'ด้านดี: '+GOD_YEAR[e.gS].g:'จุดระวัง: '+GOD_YEAR[e.gS].c}</p><p><b>ราศีล่าง ${B.BR_TH[e.b]} = ${STAR[e.gB].th}</b><br>ธีม: ${GOD_YEAR[e.gB].th} · ${me.val(e.eb)>0?'ด้านดี: '+GOD_YEAR[e.gB].g:'จุดระวัง: '+GOD_YEAR[e.gB].c}</p>`;
+    const nts=[...new Set(e.notes.map(x=>L.noteText(me,x)))];
+    const ms=L.monthEvals(me,e.cy,e);
+    const mt=`<div class="months">${ms.map(m=>{const d=B.jdToLocal(m.from,7);return `<div class="mrow"><span class="md">${d.getUTCDate()} ${TH_M[d.getUTCMonth()]}</span>${pill(m)}<span class="mg">${starShort(m.gS)}</span>${lab(m.total)}</div>`;}).join('')}</div>`;
+    const badM=ms.filter(m=>L.label(m.total).c.startsWith('b')).map(m=>{const d=B.jdToLocal(m.from,7);return `${TH_M[d.getUTCMonth()]}`;});
+    const goodM=ms.filter(m=>L.label(m.total).c.startsWith('g')).map(m=>{const d=B.jdToLocal(m.from,7);return `${TH_M[d.getUTCMonth()]}`;});
+    const rem=L.remedies(me,e); if(badM.length) rem.push(`เลี่ยงการตัดสินใจใหญ่ เซ็นสัญญาก้อนใหญ่ หรือลงทุนหนักในเดือนที่เริ่ม ${badM.join(', ')}`);
+    h+=`<details class="yr"${open?' open':''}><summary>${pill(e)}<span class="yt"><b>${e.cy} ปี${yearName(e.cy)}</b><small>${ELN[e.es]}/${ELN[e.eb]}${e.taisui.length?' · '+e.taisui.map(t=>L.TAISUI_N[t]).join(', '):''}</small></span>${lab(e.total)}</summary><div class="yb">
+      ${gs}${nts.length?`<div class="nts">${nts.map(t=>`<p>• ${t}</p>`).join('')}</div>`:''}
+      ${e.luck?`<p class="small">อยู่ในวัยจร ${B.STEM_TH[e.luck.s]}${B.BR_TH[e.luck.b]} ซึ่งให้ผล${L.label(e.luck.sc).n} ถูกนำมารวมในคะแนนปีนี้ด้วย</p>`:''}
+      <h4>${Lb.c.startsWith('g')?'วิธีใช้ปีนี้ให้คุ้ม':'วิธีรับมือและแก้'}</h4>${Lb.c.startsWith('g')?`<ul class="rem"><li>เร่งเรื่องสำคัญในเดือนที่ดี: ${goodM.join(', ')||'ทยอยทำตลอดปี'}</li><li>ใช้ธาตุให้คุณ (${me.fav.slice(0,2).map(x=>ELN[x]).join(', ')}) เสริมต่อ</li>${rem.filter(x=>!x.startsWith('ปีนี้ไม่ต้อง')).map(x=>`<li>${x}</li>`).join('')}</ul>`:`<ul class="rem">${rem.map(x=>`<li>${x}</li>`).join('')}</ul>`}
+      <h4>รายเดือน</h4><p class="small">วันที่คือวันเริ่มเดือนจีน (ตามสารท)</p>${mt}</div></details>`; });
+  h+=`</section>`;
+  return h;
+}
+
+// ---------- TAB: days ----------
+let CAL=null;
+function yearBranchAt(y,m,d){return B.compute({y,m,d,h:12,mi:0,tz:7,lon:105,solar:false}).pillars.year.b;}
+function renderDays(){
+  const now=new Date(); if(!CAL) CAL={y:now.getFullYear(),m:now.getMonth()+1,sel:null,pur:'gen',w:''};
+  const people=store.get('bazi-people',[]); const other=CAL.w!==''&&people[+CAL.w]?personOf(people[+CAL.w]):null;
+  let h=`<section style="margin-top:14px"><h2>หาวันดี</h2><p class="lede">คำนวณจากดวงคุณ ${other?'และดวงของ'+esc(people[+CAL.w].nm)+' ':''}ตามเรื่องที่จะทำ วันที่ชงกับหลักวันหรือหลักปีของคุณจะถูกหักคะแนน</p>
+  <div class="box"><div class="row2"><div class="field" style="margin:0"><label class="l" for="pur">เรื่องที่จะทำ</label><select id="pur">${PURPOSE.map(p=>`<option value="${p.k}"${p.k===CAL.pur?' selected':''}>${p.n}</option>`).join('')}</select></div>
+  <div class="field" style="margin:0"><label class="l" for="wth">ไปกับใคร</label><select id="wth"><option value="">คนเดียว</option>${people.map((p,i)=>`<option value="${i}"${String(i)===CAL.w?' selected':''}>${esc(p.nm)}</option>`).join('')}</select></div></div></div>`;
+  // top list next 45 days
+  const list=[]; for(let i=0;i<45;i++){const dt=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i);const y=dt.getFullYear(),m=dt.getMonth()+1,d=dt.getDate();list.push(L.evalDay(ME,y,m,d,CAL.pur,other,yearBranchAt(y,m,d)));}
+  const best=list.filter(x=>!x.broken).sort((x,y)=>y.sc-x.sc).slice(0,6).sort((x,y)=>(x.y*400+x.m*32+x.d)-(y.y*400+y.m*32+y.d));
+  const worst=[...list].sort((x,y)=>x.sc-y.sc).slice(0,5).sort((x,y)=>(x.y*400+x.m*32+x.d)-(y.y*400+y.m*32+y.d));
+  const dname=x=>`${['อา','จ','อ','พ','พฤ','ศ','ส'][new Date(x.y,x.m-1,x.d).getDay()]}. ${x.d} ${TH_M[x.m-1]}`;
+  h+=`<div class="box"><b>วันที่ดีที่สุดใน 45 วันข้างหน้า</b>${best.map(x=>`<button class="drow" data-d="${x.y}-${x.m}-${x.d}"><span class="dd">${dname(x)}</span>${pill(x)}${lab(x.sc,'day')}</button>`).join('')}
+  <b style="display:block;margin-top:14px">วันที่ควรเลี่ยงเรื่องสำคัญ</b>${worst.map(x=>`<button class="drow" data-d="${x.y}-${x.m}-${x.d}"><span class="dd">${dname(x)}</span>${pill(x)}${lab(x.sc,'day')}</button>`).join('')}</div>`;
+  // calendar
+  const first=new Date(CAL.y,CAL.m-1,1), days=new Date(CAL.y,CAL.m,0).getDate(), off=first.getDay();
+  let cells=''; for(let i=0;i<off;i++) cells+='<div></div>';
+  for(let d=1;d<=days;d++){const e=L.evalDay(ME,CAL.y,CAL.m,d,CAL.pur,other,yearBranchAt(CAL.y,CAL.m,d));const c=L.label(e.sc,'day').c;const isT=CAL.y===now.getFullYear()&&CAL.m===now.getMonth()+1&&d===now.getDate();const sel=CAL.sel===`${CAL.y}-${CAL.m}-${d}`;
+    cells+=`<button class="cd ${c}${isT?' today':''}${sel?' sel':''}" data-d="${CAL.y}-${CAL.m}-${d}" aria-label="${d} ${TH_MF[CAL.m-1]} ${L.label(e.sc,'day').n}"><span>${d}</span><i></i></button>`;}
+  h+=`<div class="box"><div class="calhead"><button id="pm" aria-label="เดือนก่อน">‹</button><b>${TH_MF[CAL.m-1]} ${CAL.y}</b><button id="nm2" aria-label="เดือนถัดไป">›</button></div>
+  <div class="cal"><span>อา</span><span>จ</span><span>อ</span><span>พ</span><span>พฤ</span><span>ศ</span><span>ส</span>${cells}</div>
+  <div class="legend">${['g2','g1','n0','b1','b2'].map((c,i)=>`<span><i class="${c}"></i>${['ดีมาก','ดี','กลาง ๆ','ระวัง','เลี่ยง'][i]}</span>`).join('')}</div></div>`;
+  h+=`<div id="dayDetail">${CAL.sel?dayDetail(CAL.sel,other):''}</div></section>`;
+  return h;
+}
+function dayDetail(key,other){
+  const [y,m,d]=key.split('-').map(Number); const e=L.evalDay(ME,y,m,d,CAL.pur,other,yearBranchAt(y,m,d));
+  const hrs=L.bestHours(ME,e.s,e.b);
+  const nts=[...new Set(e.notes.map(x=>L.noteText(ME,x).replace('ชงกับ','วันนี้ชงกับ')))];
+  const pos=[]; if(ME.val(e.es)>0) pos.push(`ราศีบนธาตุ${ELN[e.es]}เป็นธาตุให้คุณ`); if(ME.val(e.eb)>0) pos.push(`ราศีล่างธาตุ${ELN[e.eb]}เป็นธาตุให้คุณ`);
+  return `<div class="box daybox"><div class="selfhead">${pill(e)}<div><h3>${d} ${TH_MF[m-1]} ${y}</h3><p>วัน${B.STEM_TH[e.s]}${B.BR_TH[e.b]} · ดาว${starShort(e.gS)} ${lab(e.sc,'day')}</p></div></div>
+  <ul class="rem">${pos.map(t=>`<li>${t}</li>`).join('')}${e.why.map(t=>`<li>${t}</li>`).join('')}${nts.map(t=>`<li>${t}</li>`).join('')}${e.broken?'<li>เป็นวันที่ชงกับนักษัตรของปี (岁破) ตามตำราไม่นิยมใช้ทำเรื่องใหญ่</li>':''}${e.oth?(e.oth.clash?'<li>วันนี้ชงกับดวงของอีกฝ่าย ไม่เหมาะนัดคุยเรื่องสำคัญ</li>':'<li>ไม่ชงกับดวงของอีกฝ่าย</li>'):''}</ul>
+  <p style="margin:10px 0 4px"><b>ยามดีของวันนี้</b></p><p style="margin:0">${hrs.slice(0,3).map(x=>`${L.hourRange(x.hb)} (${B.BR_TH[x.hb]})`).join(' · ')}</p><p class="small" style="margin-top:4px">ยามที่ควรเลี่ยง: ${L.hourRange(hrs[11].hb)} (${B.BR_TH[hrs[11].hb]})</p></div>`;
+}
+function bindDays(){
+  const upd=()=>{show();};
+  $('#pur').onchange=e=>{CAL.pur=e.target.value;upd();};
+  $('#wth').onchange=e=>{CAL.w=e.target.value;upd();};
+  $('#pm').onclick=()=>{CAL.m--;if(CAL.m<1){CAL.m=12;CAL.y--;}upd();};
+  $('#nm2').onclick=()=>{CAL.m++;if(CAL.m>12){CAL.m=1;CAL.y++;}upd();};
+  document.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{const k=b.dataset.d;const [y,m]=k.split('-').map(Number);CAL.sel=k;CAL.y=y;CAL.m=m;show();const el=$('#dayDetail');if(el)el.scrollIntoView({block:'start',behavior:'smooth'});});
+}
+
+// ---------- TAB: people ----------
+let OPEN=null, PSEL=null;
+function personOf(p){const x=L.makePerson(readInput(p.dt,p.tm,p.nt,0,true,null));x.p=p;return x;}
+function renderPeople(){
+  const people=store.get('bazi-people',[]);
+  let h=`<section style="margin-top:14px"><h2>ดูกับคนอื่น</h2><p class="lede">เพิ่มเพื่อนร่วมงาน หัวหน้า ลูกค้า หรือคนที่จะไปคุยด้วย แอปจะบอกว่าธาตุเกื้อหรือขัดกันอย่างไร ควรคุยแบบไหน และนัดวันไหนดี ข้อมูลเก็บไว้ในเครื่องนี้เท่านั้น</p>
+  <form class="box" id="pf" novalidate><div class="row2"><div class="field"><label class="l" for="pn">ชื่อ</label><input type="text" id="pn" placeholder="เช่น พี่เอ"></div><div class="field"><label class="l" for="pr">เป็นอะไรกับคุณ</label><select id="pr">${ROLES.map(r=>`<option>${r}</option>`).join('')}</select></div></div>
+  <div class="row2"><div class="field"><label class="l" for="pd">วันเกิด (ค.ศ.)</label><input type="date" id="pd" min="1900-01-01" max="2100-12-31"></div><div class="field"><label class="l" for="pt">เวลาเกิด</label><input type="time" id="pt"><label class="check"><input type="checkbox" id="pnt" checked> ไม่ทราบเวลา</label></div></div>
+  <p class="err" id="perr"></p><button class="go" type="submit">เพิ่มและดูผล</button></form>`;
+  if(people.length){
+    const Ps=people.map(personOf);
+    h+=`<div class="box"><b>คนที่บันทึกไว้ (${people.length})</b>${Ps.map((x,i)=>{const pr=L.pair(ME,x);return `<div class="prow${PSEL===i?' on':''}"><button class="pbtn" data-p="${i}"><span class="bigzh s" style="background:${cssEl[x.a.de]}">${B.STEM_ZH[x.a.dm]}</span><span class="t"><b>${esc(x.p.nm)}</b><small>${esc(x.p.role)} · คนธาตุ${elName(x.a.dm)}</small></span><span class="sc">${pr.sc}</span></button><button class="del" data-x="${i}" aria-label="ลบ ${esc(x.p.nm)}">ลบ</button></div>${PSEL===i?pairDetail(x,pr):''}`;}).join('')}</div>`;
+    if(people.length>=2) h+=teamView(Ps);
+  } else h+=`<div class="box empty">ยังไม่มีรายชื่อ เพิ่มคนแรกจากฟอร์มด้านบน ถ้าไม่รู้เวลาเกิดของเขา ใช้แค่วันเกิดก็ดูได้</div>`;
+  return h+`</section>`;
+}
+function pairDetail(th,pr){
+  const me=ME; const p=th.p; const verdict=pr.sc>=75?'เกื้อหนุนกันดี':pr.sc>=60?'เข้ากันได้ ปรับนิดหน่อย':pr.sc>=45?'กลาง ๆ ต้องเข้าใจกัน':'ต้องใช้ความเข้าใจสูง';
+  let rt=PAIR_REL[pr.rel];
+  if(pr.rel==='power') rt+=(me.a.type==='strong'||me.a.type==='xstrong')?' ดวงคุณแข็ง แรงกดดันจากเขาจึงช่วยขัดเกลาให้คุณเก่งขึ้น':' ดวงคุณอ่อน ควรมีคนกลางหรือหาคนธาตุ'+ELN[me.a.E('res')]+'มาช่วยประสาน';
+  if(pr.rel==='out') rt+=(me.a.type==='strong'||me.a.type==='xstrong'||me.a.type==='bal')?' ดวงคุณมีแรงเหลือ การให้เขาจึงกลายเป็นผลงานของคุณด้วย':' ดวงคุณอ่อน อย่ารับภาระแทนเขาจนหมดแรง';
+  const ce=pr.common.length?pr.common[0]:me.fav[0];
+  const days=[]; const now=new Date(); for(let i=0;i<30;i++){const dt=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i);const y=dt.getFullYear(),m=dt.getMonth()+1,d=dt.getDate();const e=L.evalDay(me,y,m,d,p.role.startsWith('ลูกค้า')?'deal':p.role.startsWith('คู่รัก')?'love':p.role==='หัวหน้า'?'meet':'gen',th,yearBranchAt(y,m,d));if(!e.broken&&!(e.oth&&e.oth.clash))days.push(e);}
+  days.sort((x,y)=>y.sc-x.sc); const bd=days.slice(0,4).sort((x,y)=>(x.m*32+x.d)-(y.m*32+y.d));
+  const prof=PROFILE[th.a.dm];
+  return `<div class="pd"><div class="pscore"><div class="n">${pr.sc}</div><div><b>${verdict}</b><p class="small" style="margin:0">คะแนนความเกื้อหนุนจากธาตุ นักษัตร และดาวผู้อุปถัมภ์</p></div></div>
+  <p><b>บทบาทธาตุระหว่างกัน</b><br>${rt}</p>
+  <p><b>เขาพกธาตุให้คุณมาแค่ไหน</b><br>ในดวงเขามีธาตุ${me.fav.slice(0,2).map(e=>ELN[e]).join('และ')} (ธาตุให้คุณ) ราว ${Math.round(pr.supMe*100)}% ${pr.supMe>=0.45?'อยู่ใกล้เขาแล้วคุณมักได้พลัง':pr.supMe<=0.25?'อยู่ด้วยนาน ๆ คุณอาจเหนื่อย ควรพักหรือเติมธาตุให้คุณเอง':'อยู่ในระดับกลาง'}<br>ในดวงคุณมีธาตุให้คุณของเขาราว ${Math.round(pr.supTh*100)}% ${pr.supTh>=0.45?'เขาจึงรู้สึกดีเวลาอยู่กับคุณ':pr.supTh<=0.25?'คุณอาจต้องเป็นฝ่ายปรับเข้าหาเขาก่อน':''}</p>
+  ${pr.pts.length?`<ul class="rem">${pr.pts.map(([s,t])=>`<li class="${s==='+'?'pos':'neg'}">${t}</li>`).join('')}</ul>`:''}
+  <p><b>วิธีคุยกับ${esc(p.nm)} (คนธาตุ${elName(th.a.dm)} · ${prof.t})</b><br>${HOWTALK[th.a.dm]}</p>
+  <p><b>ในฐานะ${esc(p.role)}</b><br>${ROLE_TIP[p.role]||ROLE_TIP['อื่น ๆ']}</p>
+  <p><b>ตอนนัดเจอ</b><br>ใส่หรือพกของสี${ELINFO[ce].color}${pr.common.length?' ซึ่งเป็นธาตุให้คุณของทั้งคู่':''} เลือกสถานที่แนว${ELINFO[ce].place} นั่งหันไปทาง${DIR[ce]}</p>
+  <p><b>วันดีที่จะนัดใน 30 วันนี้</b><br>${bd.map(x=>`${x.d} ${TH_M[x.m-1]} (${L.label(x.sc,'day').n})`).join(' · ')||'ช่วงนี้ไม่มีวันที่เด่น เลือกวันที่ไม่ชงกันแทน'}</p>
+  <p class="small">${th.p.nt?'ไม่มีเวลาเกิดของเขา ผลคำนวณจาก 3 หลัก':''}</p></div>`;
+}
+function teamView(Ps){
+  const all=[ME,...Ps]; const cnt=[0,0,0,0,0]; all.forEach(x=>cnt[x.a.de]++);
+  const mix=[0,0,0,0,0]; all.forEach(x=>x.dist.forEach((v,i)=>mix[i]+=v/all.length));
+  const lack=mix.map((v,i)=>[i,v]).filter(x=>x[1]<0.12).map(x=>ELN[x[0]]);
+  const roles=all.map(x=>{const {sh}=L.groups(x);const top=Object.entries(sh).sort((a,b)=>b[1]-a[1])[0][0];return {nm:x===ME?(ME.v.nm||'คุณ'):x.p.nm,top,dm:x.a.dm};});
+  return `<div class="box"><b>ภาพรวมทีม (${all.length} คน รวมคุณ)</b>
+  <div class="dbar" style="margin-top:10px">${mix.map((x,i)=>`<div style="flex:${Math.max(x,0.02)};background:${cssEl[i]}">${x>=0.1?ELN[i]:''}</div>`).join('')}</div>
+  <p class="small" style="margin:4px 0 10px">ธาตุตัวตนในทีม: ${cnt.map((c,i)=>c?`${ELN[i]} ${c} คน`:'').filter(Boolean).join(' · ')}</p>
+  <p>${lack.length?`ทีมขาดพลังธาตุ${lack.join(', ')} ซึ่งหมายถึง${lack.map(n=>ELINFO[ELN.indexOf(n)].mean.split(' ').slice(0,3).join(' ')).join(' / ')} ควรหาคนธาตุนี้มาเสริม หรือใช้สีและกิจกรรมของธาตุนี้ในที่ทำงาน`:'ธาตุในทีมกระจายค่อนข้างครบ'}</p>
+  <table class="rel"><thead><tr><th>ชื่อ</th><th>ถนัดงาน</th></tr></thead><tbody>${roles.map(r=>`<tr><td><span class="dot" style="background:${cssEl[B.stemEl(r.dm)]}"></span>${esc(r.nm)}</td><td>${STAR_ROLE[r.top]}</td></tr>`).join('')}</tbody></table></div>`;
+}
+function bindPeople(){
+  const f=$('#pf'); $('#pnt').onchange=()=>{$('#pt').disabled=$('#pnt').checked;}; $('#pt').disabled=$('#pnt').checked;
+  f.onsubmit=e=>{e.preventDefault();const nm=$('#pn').value.trim(),dt=$('#pd').value,tm=$('#pt').value,nt=$('#pnt').checked||!tm;const err=$('#perr');
+    if(!nm||!dt){err.textContent='ใส่ชื่อและวันเกิด';err.style.display='block';return;}
+    const ps=store.get('bazi-people',[]);ps.push({nm,role:$('#pr').value,dt,tm:nt?'':tm,nt});store.set('bazi-people',ps);PSEL=ps.length-1;show();
+    setTimeout(()=>{const el=document.querySelector('.prow.on');if(el)el.scrollIntoView({block:'start',behavior:'smooth'});},50);};
+  document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{const i=+b.dataset.p;PSEL=PSEL===i?null:i;show();const el=document.querySelector('.prow.on');if(el)el.scrollIntoView({block:'start'});});
+  document.querySelectorAll('[data-x]').forEach(b=>b.onclick=()=>{const i=+b.dataset.x;const ps=store.get('bazi-people',[]);ps.splice(i,1);store.set('bazi-people',ps);PSEL=null;if(CAL&&CAL.w!=='')CAL.w='';show();});
+}
+})();
+
+</script>
+</body>
+</html>
